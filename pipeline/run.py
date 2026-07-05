@@ -20,19 +20,54 @@ Examples:
 from __future__ import annotations
 
 import argparse
+import re
 from datetime import datetime, timedelta, timezone
 
 from dotenv import load_dotenv
 
 from pipeline import news
 
+_DURATION_RE = re.compile(r"^(\d+(?:\.\d+)?)([mhd])$", re.IGNORECASE)
+_UNIT_SECONDS = {"m": 60, "h": 3600, "d": 86400}
+
+
+def parse_duration(value: str) -> timedelta:
+    """Parse a duration string like '6h', '2d', '90m', '1.5d' into a timedelta.
+
+    Supported units:
+        m  — minutes
+        h  — hours
+        d  — days
+
+    Raises argparse.ArgumentTypeError on bad input so argparse surfaces it cleanly.
+    """
+    m = _DURATION_RE.match(value.strip())
+    if not m:
+        raise argparse.ArgumentTypeError(
+            f"invalid duration {value!r} — expected a number followed by m/h/d "
+            f"(e.g. '6h', '2d', '90m', '1.5d')"
+        )
+    amount, unit = float(m.group(1)), m.group(2).lower()
+    return timedelta(seconds=amount * _UNIT_SECONDS[unit])
+
+
+def _fmt_duration(td: timedelta) -> str:
+    """Human-readable label for a timedelta, collapsing to the largest clean unit."""
+    total_seconds = td.total_seconds()
+    if total_seconds < 3600:
+        return f"{total_seconds / 60:.4g}m"
+    if total_seconds < 86400:
+        return f"{total_seconds / 3600:.4g}h"
+    return f"{total_seconds / 86400:.4g}d"
+
 
 def main() -> None:
     load_dotenv()  # reads .env in the project root -> FINNHUB_API_KEY into os.environ
 
     args = _parse_args()
-    since = datetime.now(timezone.utc) - timedelta(days=args.days)
     now = datetime.now(timezone.utc)
+    since = now - args.lookback
+    window_label = _fmt_duration(args.lookback)
 
     for ticker in args.ticker:
         try:
@@ -44,16 +79,16 @@ def main() -> None:
         if args.limit and len(articles) > args.limit:
             articles = articles[-args.limit:]  # keep the most recent N
 
-        _print_summary(ticker, articles, days=args.days, now=now)
+        _print_summary(ticker, articles, lookback=args.lookback, window_label=window_label, now=now)
         if args.show:
             _print_articles(articles)
         if args.classify:
             _classify(ticker, articles, args.catalyst or [])
 
 
-def _print_summary(ticker: str, articles: list[news.Article], *, days: int, now: datetime) -> None:
+def _print_summary(ticker: str, articles: list[news.Article], *, lookback: timedelta, window_label: str, now: datetime) -> None:
     n = len(articles)
-    print(f"\n=== {ticker} — last {days}d ===")
+    print(f"\n=== {ticker} — last {window_label} ===")
     if not n:
         print("  no articles")
         return
@@ -67,7 +102,7 @@ def _print_summary(ticker: str, articles: list[news.Article], *, days: int, now:
     # Rate over the span actually covered, not the span requested — a capped
     # feed (oldest_age << days) makes n/days an undercount.
     covered_days = max((newest - oldest).total_seconds() / 86400, 1e-6)
-    capped = oldest_age.total_seconds() / 86400 < days * 0.9
+    capped = oldest_age < lookback * 0.9 # feed didn't reach back as far as we asked
 
     by_source: dict[str, int] = {}
     for a in articles:
@@ -76,7 +111,7 @@ def _print_summary(ticker: str, articles: list[news.Article], *, days: int, now:
     print(f"  articles:       {n}  ({n / covered_days:.1f}/day over covered span)")
     print(f"  with body text: {with_body}/{n}  ({with_body / n:.0%})   <- Pass 2 quote-rule viability")
     print(f"  newest age:     {_fmt_age(newest_age)}   <- feed staleness")
-    print(f"  oldest age:     {_fmt_age(oldest_age)}" + (f"   <- CAPPED: feed truncated well short of {days}d" if capped else ""))
+    print(f"  oldest age:     {_fmt_age(oldest_age)}" + (f"   <- CAPPED: feed truncated well short of {window_label}" if capped else ""))
     print(f"  by source:      {by_source}")
 
 
@@ -122,7 +157,26 @@ def _fmt_age(delta: timedelta) -> str:
 def _parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Kestrel news pipeline spike driver")
     p.add_argument("--ticker", nargs="+", required=True, help="one or more tickers, e.g. NVDA AMD")
-    p.add_argument("--days", type=int, default=3, help="look back this many days (default 3)")
+
+    window = p.add_mutually_exclusive_group()
+    window.add_argument(
+        "--since",
+        dest="lookback",
+        type=parse_duration,
+        metavar="DURATION",
+        help=(
+            "look-back window as number + unit: m (minutes), h (hours), d (days). "
+            "E.g. '6h', '2d', '90m', '1.5d'. Default: 3d."
+        ),
+    )
+    window.add_argument(
+        "--days",
+        dest="lookback",
+        type=lambda x: parse_duration(f"{x}d"),
+        metavar="N",
+        help="[legacy] equivalent to --since Nd. Use --since instead.",
+    )
+
     p.add_argument(
         "--sources",
         nargs="+",

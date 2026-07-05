@@ -44,7 +44,7 @@ class VerdictLike(Protocol):
     """The slice of a Pass-2 verdict the state machine actually reads.
 
     Kept structural on purpose: catalysts.py must not depend on llm.py (which
-    imports the Anthropic SDK). Anything with these two attributes works —
+    imports the OpenAI SDK). Anything with these two attributes works —
     the real CatalystVerdict, or a test stub.
     """
     proposed_state: str   # one of PROPOSALS

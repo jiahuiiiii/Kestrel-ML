@@ -1,0 +1,10 @@
+# Kestrel pipeline + eval harness. Install into YOUR venv:
+#   python -m pip install -r requirements.txt
+requests
+python-dotenv
+pydantic
+openai
+pytest
+
+# optional backup news source (pipeline/news.py yfinance adapter)
+# yfinance

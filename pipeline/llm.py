@@ -1,8 +1,8 @@
 """Two-pass catalyst classifier (ml_plan.md §5).
 
-Pass 1 (claude-haiku-4-5): cheap relevance filter over a batch of articles —
+Pass 1 (gpt-5.4-mini): cheap relevance filter over a batch of articles —
 drops the ~90% that don't bear on any watched catalyst.
-Pass 2 (claude-sonnet-5): careful confirmation judgment on each surviving
+Pass 2 (gpt-5.4): careful confirmation judgment on each surviving
 (article, catalyst) pair, with a verbatim supporting quote.
 
 The anti-hallucination guards live HERE, in code, after the model call — not
@@ -35,8 +35,8 @@ from pipeline.news import Article
 
 log = logging.getLogger(__name__)
 
-PASS1_MODEL = "claude-haiku-4-5"
-PASS2_MODEL = "claude-sonnet-5"
+PASS1_MODEL = "gpt-5.4-mini"   # cheap relevance filter (~$0.75/$4.50 per MTok)
+PASS2_MODEL = "gpt-5.4"        # reasoning + quoting (~$2.50/$15 per MTok)
 PASS1_CHUNK = 25          # articles per Pass-1 call (batched to cut cost/latency)
 _PROMPT_DIR = Path(__file__).parent / "prompts"
 
@@ -134,7 +134,11 @@ def pass1_relevance(articles: list[Article], catalysts: list[dict]) -> list[tupl
             system=_prompt("pass1_relevance"),
             user=user_msg,
             schema=_Pass1Output,
-            max_tokens=4096,
+            # generous: a 25-article batch's JSON plus GPT-5's reasoning tokens
+            # must both fit, or the response truncates and articles silently drop
+            # (a Pass-1 recall killer). Reasoning models bill only tokens used.
+            max_tokens=8192,
+            effort="low",   # batched triage — keep reasoning minimal and cheap
         )
 
         for item in result.items:
@@ -170,8 +174,8 @@ def pass2_confirm(article: Article, catalyst: dict) -> CatalystVerdict:
         system=_prompt("pass2_confirmation"),
         user=user_msg,
         schema=_Pass2Output,
-        max_tokens=2048,
-        effort="low",   # classifier, not an essay — adaptive thinking stays on
+        max_tokens=4096,       # room for reasoning tokens + the verdict
+        effort="low",          # classifier, not an essay — keep reasoning short
     )
     return _apply_guards(raw, article)
 
@@ -228,36 +232,44 @@ def prompt_version(name: str) -> str:
 
 
 # --------------------------------------------------------------------------- #
-# The single Anthropic call site.
+# The single OpenAI call site.
 # --------------------------------------------------------------------------- #
 def _call(*, model: str, system: str, user: str, schema: type[BaseModel],
           max_tokens: int, effort: str | None = None):
-    """One structured-outputs call. `client.messages.parse` validates the
-    response against `schema` — no hand-rolled JSON parsing anywhere.
+    """One structured-outputs call. `chat.completions.parse` constrains the
+    model to `schema` and returns a validated instance — no JSON parsing here.
 
-    The system prompt carries a cache_control marker: it's identical across
-    calls within a poll cycle, so Pass-2 calls after the first read it from
-    cache. (Below the model's minimum cacheable prefix it silently no-ops.)
+    The system prompt is the identical leading message on every call, so OpenAI
+    caches it automatically (prefix caching kicks in around 1K tokens and needs
+    no explicit marker); `prompt_cache_key` just pins calls to the same cache
+    lane. `effort` maps to `reasoning_effort` — "low" keeps GPT-5 deliberation
+    short, which is what a classifier wants.
     """
     kwargs: dict = {}
     if effort is not None:
-        kwargs["output_config"] = {"effort": effort}
+        kwargs["reasoning_effort"] = effort
 
-    response = _client().messages.parse(
+    completion = _client().chat.completions.parse(
         model=model,
-        max_tokens=max_tokens,
-        system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
-        messages=[{"role": "user", "content": user}],
-        output_format=schema,
+        max_completion_tokens=max_tokens,
+        messages=[
+            {"role": "system", "content": system},
+            {"role": "user", "content": user},
+        ],
+        response_format=schema,
+        prompt_cache_key=f"kestrel:{model}",
         **kwargs,
     )
-    parsed = response.parsed_output
-    if parsed is None:
-        raise RuntimeError(f"{model} returned unparseable output (stop_reason={response.stop_reason})")
-    return parsed
+    message = completion.choices[0].message
+    if message.parsed is None:
+        raise RuntimeError(
+            f"{model} returned no parsed output "
+            f"(refusal={message.refusal!r}, finish_reason={completion.choices[0].finish_reason})"
+        )
+    return message.parsed
 
 
 @lru_cache
 def _client():
-    import anthropic  # lazy: lets the deterministic tests run without the SDK installed
-    return anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from the environment
+    import openai  # lazy: lets the deterministic tests run without the SDK installed
+    return openai.OpenAI()  # reads OPENAI_API_KEY from the environment

@@ -6,7 +6,7 @@ and prints the numbers the spike needs to decide the primary source:
   - fraction with quotable body text  (has_body) vs headline-only
   - staleness of the newest article   (how far behind real-time the feed is)
 
-With --classify it also runs the two-pass LLM classifier (needs ANTHROPIC_API_KEY
+With --classify it also runs the two-pass LLM classifier (needs OPENAI_API_KEY
 in .env) against ad-hoc catalysts given on the command line.
 
 Examples:
@@ -88,7 +88,7 @@ def _print_articles(articles: list[news.Article]) -> None:
 
 def _classify(ticker: str, articles: list[news.Article], descriptions: list[str]) -> None:
     """Run the two-pass classifier against ad-hoc catalysts and print verdicts."""
-    from pipeline import llm  # lazy: only needs anthropic/pydantic when actually used
+    from pipeline import llm  # lazy: only needs openai/pydantic when actually used
 
     if not descriptions:
         print("  --classify needs at least one --catalyst \"description\"")
@@ -133,7 +133,7 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--limit", type=int, default=None,
                    help="cap at the N most recent articles (recommended with --classify)")
     p.add_argument("--classify", action="store_true",
-                   help="run the two-pass LLM classifier (needs ANTHROPIC_API_KEY)")
+                   help="run the two-pass LLM classifier (needs OPENAI_API_KEY)")
     p.add_argument("--catalyst", action="append", metavar="DESC",
                    help="catalyst description to watch for; repeatable")
     return p.parse_args()

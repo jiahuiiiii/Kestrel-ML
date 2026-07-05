@@ -144,16 +144,21 @@ The motivating example ("P/E < 28 AND capex cut AND revenue decel") needs struct
 
 Design carried over from `bot_plan.md`, updated to current models and hardened.
 
-### Models (current IDs — do not use the old dated names)
+### Models (switched to OpenAI 2026-07-05; original build used claude-haiku-4-5 / claude-sonnet-5)
 
 | Pass | Model | Why | Price (per MTok in/out) |
 |---|---|---|---|
-| 1 — relevance filter | `claude-haiku-4-5` | Cheap, fast; drops ~90% of articles | $1 / $5 |
-| 2 — confirmation | `claude-sonnet-5` | Real reasoning + quoting; near-Opus quality on this kind of task | $3 / $15 ($2/$10 intro through Aug 2026) |
+| 1 — relevance filter | `gpt-5.4-mini` | Cheap, fast; drops ~90% of articles | $0.75 / $4.50 |
+| 2 — confirmation | `gpt-5.4` | Real reasoning + quoting | $2.50 / $15 |
 
-Two Sonnet-5 gotchas to build in from day one:
-- **Adaptive thinking is ON by default** when `thinking` is omitted. For a classifier we don't need long deliberation — pass `output_config={"effort": "low"}` and keep adaptive on (better than disabling; it self-calibrates).
-- **`temperature` is rejected** on Sonnet 5 (400 error). Don't set it; determinism comes from tight prompts + structured outputs.
+Two GPT-5.4 gotchas learned the hard way (both caught by the replay harness):
+- **Reasoning tokens share the output budget.** A 25-article Pass-1 batch with a
+  tight `max_completion_tokens` intermittently truncates — articles silently drop
+  and recall craters (measured 56% one run, 100% the next). Give batched calls
+  generous headroom (8192); reasoning models only bill tokens actually used.
+- Pass `reasoning_effort="low"` — it's a classifier, not an essay. Structured
+  outputs (`chat.completions.parse` + Pydantic `response_format`) replace all
+  JSON parsing, same as before.
 
 ### Pass 1 — relevance (Haiku)
 
@@ -186,7 +191,7 @@ class CatalystVerdict(BaseModel):
 2. `proposed_state: "confirmed"` requires `source_kind: "primary" | "reporting"` — speculation caps at `rumored`. (State machine rule, section 3.)
 3. Bare-headline articles (no summary text) cap at `rumored` regardless of what the model says.
 
-**Prompt caching:** the system prompt (task instructions + output rules + few-shot examples) is identical across every call — mark it with `cache_control: {"type": "ephemeral"}` and put the per-article content after it. Sonnet 5's minimum cacheable prefix is 2048 tokens, so pad the system prompt with the few-shot examples (which we want anyway) to clear the bar. At an hourly poll cadence the cache will usually be cold between cycles (5-min TTL), but it pays off *within* a cycle when several articles hit Pass 2.
+**Prompt caching:** the system prompt (task instructions + output rules + few-shot examples) is identical across every call and always comes first, so OpenAI's automatic prefix caching applies with no explicit marker (kicks in around 1K tokens; `prompt_cache_key` pins calls to one cache lane). It pays off *within* a poll cycle when several articles hit Pass 2.
 
 **Prompts live in `pipeline/prompts/*.md`,** loaded at import — versioned in git, diffable in PRs, editable without touching code. Every verdict we persist records which prompt version produced it (a hash of the prompt file), so when I tune a prompt I can tell whether metrics moved because of the prompt or the data.
 

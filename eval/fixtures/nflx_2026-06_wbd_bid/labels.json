@@ -1,0 +1,291 @@
+{
+  "event": "nflx_2026-06_wbd_bid",
+  "ticker": "NFLX",
+  "catalysts": [
+    {
+      "id": "nflx_wbd",
+      "description": "Netflix acquires Warner Bros. Discovery (Netflix agrees to or completes a deal to buy WBD)"
+    }
+  ],
+  "labels": [
+    {
+      "article_id": "192abd5c2472b428045f1119c1854332addcfa1b337ece367418e147fa26ad0c",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Trump Wants Birthday UFC Event On The White House Lawn—A New Lawsuit Says Not So Fast",
+      "_published_at": "2026-06-08T05:25:52+00:00"
+    },
+    {
+      "article_id": "e107b3968263c4921f71a84de2c81c4486297b8677c7c683dee886fa0a442b90",
+      "catalyst_id": "nflx_wbd",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Paramount Accuses Netflix Of Waging 'Scorched-Earth Campaign' To Derail Warner Bros. Discovery Deal: Report",
+      "_published_at": "2026-06-09T08:05:14+00:00"
+    },
+    {
+      "article_id": "2778a7a2f8ec13ed0ed6d920c3a648aa9c82ccaf5f3a627c141cc513539c69c5",
+      "catalyst_id": "nflx_wbd",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Market Approves Netflix’s (NFLX) Withdrawal from the Acquisition",
+      "_published_at": "2026-06-09T14:52:16+00:00"
+    },
+    {
+      "article_id": "b65313c831683c382bcf6331d4af8918ab8b3d567eef3beaa60dc9336d8eed96",
+      "catalyst_id": "nflx_wbd",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Paramount accuses Netflix of ‘scorched-earth’ campaign against Warner Bros. deal",
+      "_published_at": "2026-06-09T15:32:01+00:00"
+    },
+    {
+      "article_id": "a5733e72dd3a5974736f5b20390784213a6207a6d9a2d290a5fcdee065531c48",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Warner Bros Stock Hits 3-Month Low. The Paramount Merger Spread Is Too Good to Pass Up.",
+      "_published_at": "2026-06-09T19:15:00+00:00"
+    },
+    {
+      "article_id": "e524f16bc4cec5739aed65dd537f42593df4a20f791dd9b8aa9117a76982c283",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "$100 Invested In Netflix 10 Years Ago Would Be Worth This Much Today",
+      "_published_at": "2026-06-10T12:45:47+00:00"
+    },
+    {
+      "article_id": "879bfd120303acd9bc57b8cdc1e71d06bfe410b61e0d2cb78894481f17b71e6d",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Paramount-WBD merger wins approval from DOJ",
+      "_published_at": "2026-06-12T16:35:07+00:00"
+    },
+    {
+      "article_id": "7f2ff1dce9074a4ecd504609cf1acdd530e2d00b9e5408ab20ddf240b133d6ab",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Paramount’s Deal for Warner Bros. Is Cleared by US DOJ",
+      "_published_at": "2026-06-12T21:07:00+00:00"
+    },
+    {
+      "article_id": "d4a13e06a9c45a41c0cad7b3af14809128e07c49c091f014d3f80949a661774e",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Netflix Denies It Made Acquisition Bid For Roku, Semafor Correspondent Says",
+      "_published_at": "2026-06-16T12:05:01+00:00"
+    },
+    {
+      "article_id": "3d7c032cae16323f54de1d01e7fed8f283edf9941a5786f3098404cb29595d82",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Netflix Flexes 'M&A Muscle' As Bidding Contests Spook Wall Street",
+      "_published_at": "2026-06-16T12:36:37+00:00"
+    },
+    {
+      "article_id": "49b96db128ff79f1cd2278bebeed5c2c033e6079150c568260f502450d3327e3",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Netflix shares drop after report it lost $22B Roku bidding war to Fox",
+      "_published_at": "2026-06-16T14:57:18+00:00"
+    },
+    {
+      "article_id": "786dc7c419508b68132425c6466888a62d2f4a2047cd3ea028cc47cb3b2b8154",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Lionsgate Stock Jumps On Netflix Takeover Talk",
+      "_published_at": "2026-06-16T15:52:59+00:00"
+    },
+    {
+      "article_id": "5f7b1190be1d737fd682da6b00b0bce72e64a2040c3d0c4bde76e8b2bd2cb77c",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Netflix Is Reportedly Eyeing Lionsgate After Losing Roku Bid To Fox – A Look At Why The Fox Deal Might Have Appealed To ",
+      "_published_at": "2026-06-16T16:46:25+00:00"
+    },
+    {
+      "article_id": "1b55fc52cf7a664c52da75941f45a39e49ad6bb094e19b7fcbd7fbf8fa6ae4b8",
+      "catalyst_id": "nflx_wbd",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Netflix (NFLX) Weighs Lionsgate After Missing Out On Roku And Warner Bros. Discovery",
+      "_published_at": "2026-06-16T19:08:13+00:00"
+    },
+    {
+      "article_id": "6b42ab7230c474649d0fcfe9dd1c8d58da66bcc1a38126a02b20c5a1c37737ab",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Netflix reportedly tried & failed to buy Roku, Western Digital is the new AI play",
+      "_published_at": "2026-06-16T20:32:11+00:00"
+    },
+    {
+      "article_id": "dc8e6e8d4d0e08e5b5d1b52b360aa3b197f3659f1ba10a966c7f00f50d628fb6",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Whiplash: Lionsgate stock tumbles as Netflix denies takeover plans",
+      "_published_at": "2026-06-16T21:13:39+00:00"
+    },
+    {
+      "article_id": "2722959d69a48b022f4639ff1b8d78e014ef1c4301d76030e8b31cce6241fc58",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "LION Stock Drops Over 4% After-Hours — Netflix Reportedly Dismisses Lionsgate Takeover Rumors",
+      "_published_at": "2026-06-16T23:25:19+00:00"
+    },
+    {
+      "article_id": "c732992cbe1c522e973e71a410ec6b59285a13a8e0838734a538b7bdc893bd96",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Paramount-WBD, Fox-Roku? No Worries For Netflix",
+      "_published_at": "2026-06-17T12:00:00+00:00"
+    },
+    {
+      "article_id": "ef37216fe55addd181107248c556c39f04b42db205464fe3e8501e7eb514b50b",
+      "catalyst_id": "nflx_wbd",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "NFLX Stock On Track For Fourth Consecutive Month In The Red As Acquisition Attempts Continue To Fail",
+      "_published_at": "2026-06-17T22:18:20+00:00"
+    },
+    {
+      "article_id": "c66679c321c5d2979c5d9773a6e41cf8669243d194f7d7bfb314a5983a384d80",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Netflix's Roku loss points to bigger streaming risk",
+      "_published_at": "2026-06-18T01:47:00+00:00"
+    },
+    {
+      "article_id": "6876500a7c8ba5a79dfaae18d703eb0641aa1ae300310aea316ca4fc3fea166d",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Lionsgate: M&A Rumors, Denials, And Where We Go From Here",
+      "_published_at": "2026-06-18T16:50:10+00:00"
+    },
+    {
+      "article_id": "e733cfe72e5860cfbc29da196df19358cf684c77e118cbdf5cf9a4b8fa38efae",
+      "catalyst_id": "nflx_wbd",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Is Netflix Better Off Without Roku or Warner Bros., or Are Cracks Forming Beneath the Surface?",
+      "_published_at": "2026-06-19T23:49:00+00:00"
+    },
+    {
+      "article_id": "b7ca0b2ddf6d2c1906836d27f518bf78409d0cae5c4d22cf0eaf550a6dfa0517",
+      "catalyst_id": "nflx_wbd",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Netflix, Inc. (NFLX) Still One of the Best Falling Stocks to Buy despite Roku and Warner Bros Acquisition Blows",
+      "_published_at": "2026-06-20T12:11:51+00:00"
+    },
+    {
+      "article_id": "014b9f62be4f0f19feae6c4c4169864a11c88c4c9f6cdb6e07509ca55c7def49",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Netflix Finally Makes an Acquisition That Wall Street Actually Likes",
+      "_published_at": "2026-06-21T13:53:00+00:00"
+    },
+    {
+      "article_id": "c8a0fcbddd4ceabdf1f7e0fbff407990039548986df15fb00f5cd9f122936812",
+      "catalyst_id": "nflx_wbd",
+      "relevant": true,
+      "expected_state": "invalidated",
+      "_headline": "Down 17%, Is Netflix a Buy After Walking Away From Warner Bros. and Roku?",
+      "_published_at": "2026-06-21T14:58:00+00:00"
+    },
+    {
+      "article_id": "410cb57ccb8a3b031d1549826d2ccb27edc3c373c22792b90b60bba911642202",
+      "catalyst_id": "nflx_wbd",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Netflix Struggles to Shift the Narrative After Warner Bros. Fiasco",
+      "_published_at": "2026-06-23T16:32:00+00:00"
+    },
+    {
+      "article_id": "ce4c3de95e63d7f97ffa3b51aea6a71c7219e84f3b6702a31195167b83aaf669",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "CNBC Sport: Rafael Nadal on retirement, Djokovic's 'GOAT' status and life after tennis",
+      "_published_at": "2026-06-24T18:00:01+00:00"
+    },
+    {
+      "article_id": "b953b022c60574257a1a83abda9bc1c7b616cdac293ecb6e99564b3eabb04d83",
+      "catalyst_id": "nflx_wbd",
+      "relevant": true,
+      "expected_state": "invalidated",
+      "_headline": "Netflix: WBD Termination, Buyback, Ad-Tech, Live-Event Edge, And Legacy Regression",
+      "_published_at": "2026-06-26T12:14:07+00:00"
+    },
+    {
+      "article_id": "c50ae37576096cc189e13f0084745469797de9739c894a7495ec25de019e0e14",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Comcast’s NBC Spinoff Raises Questions About Businesses’ Future",
+      "_published_at": "2026-06-29T22:27:05+00:00"
+    },
+    {
+      "article_id": "5f76dd39ecf4b7bdf177162e66f568299fb538bc0722cef5df1f3c6b14677d09",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "South Korean government discriminated against Coupang, U.S. companies, House report finds",
+      "_published_at": "2026-07-01T09:00:01+00:00"
+    },
+    {
+      "article_id": "3c582aab404d776dce6e6444513333658e7c458cc752cd5a11969ff16ae4bb33",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Netflix gains over 3% as report refutes NBCUniversal acquisition speculation",
+      "_published_at": "2026-07-01T20:13:22+00:00"
+    },
+    {
+      "article_id": "8c9dcc6e4cdf45bd70831f90a078b29dc03044747180f5aab8e6c2c03c962d71",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "New Minions film hits box office",
+      "_published_at": "2026-07-02T12:04:17+00:00"
+    },
+    {
+      "article_id": "b0a39ff4fcf0547efbaa1694f92bb4d9aac6e7c9c5e725ee152efe21591c6321",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Comcast Spinoff Could Rejuvenate Its Depressed Stock",
+      "_published_at": "2026-07-02T15:08:00+00:00"
+    },
+    {
+      "article_id": "3f9ab8e5b2b3229adcf117d21abdd5004fcf81b4ac448ca1eb32959632b280b8",
+      "catalyst_id": "nflx_wbd",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Why Netflix (NFLX) Stock Is Up Today",
+      "_published_at": "2026-07-03T01:08:24+00:00"
+    }
+  ],
+  "expected_final": {
+    "nflx_wbd": "invalidated"
+  },
+  "expected_confirm_article": {
+    "nflx_wbd": null
+  },
+  "_label_policy": "NEGATIVE fixture — Netflix did NOT acquire WBD. WBD was bought by Paramount Skydance (DOJ-cleared 2026-06-12); Netflix's WBD bid failed and it walked away. Core test: the pipeline must NEVER reach 'confirmed' on this catalyst despite heavy Netflix+WBD+acquisition+deal language. Labels: no_change = references the failed WBD bid as background; invalidated = states Netflix walked away / WBD deal terminated (c8a0fcbddd4c 'walking away', b953b022c605 'WBD Termination'). HARD NEGATIVES (all irrelevant to THIS catalyst): Paramount-WBD (wrong acquirer), Netflix-Roku, Netflix-Lionsgate, Netflix-NBCUniversal (wrong targets — all also dead deals). expected_final=invalidated (Netflix walked away). Drafted by Claude 2026-07-05, review."
+}

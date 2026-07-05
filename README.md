@@ -1,12 +1,14 @@
 # Kestrel — News → Catalyst Pipeline
 
-Amelia's half of Kestrel: the **news → LLM catalyst classifier → evaluation** pipeline,
-plus the eval/replay harness that proves it works. Design doc: [`ml_plan.md`](ml_plan.md).
+The **news → LLM catalyst classifier → evaluation** pipeline for Kestrel, a personal
+stock-watchlist monitor — plus the eval/replay harness that proves it works. Full design
+rationale: [`ml_plan.md`](ml_plan.md).
 
-It's a **standalone Python package of pure functions over plain dicts/dataclasses.**
-It never touches a DB, a queue, or FastAPI — Brandon's scheduler fetches a thesis,
-calls these functions, and persists what they return. The only integration surface is
-the four function signatures in [Integration contract](#integration-contract) below.
+It's a **standalone Python package of pure functions over plain dicts/dataclasses.** It
+never touches a DB, a queue, or a web framework — the host application's scheduler fetches
+a thesis, calls these functions, and persists what they return. The only integration
+surface is the four function signatures in [Integration contract](#integration-contract)
+below.
 
 ```
 pipeline/
@@ -29,7 +31,7 @@ tests/            deterministic unit tests (no network, no API key)
 Requires **Python 3.11+**. Two API keys, both free-tier-friendly.
 
 ```bash
-git clone https://github.com/jiahuiiiii/Kestrel-ML.git
+git clone https://github.com/<owner>/Kestrel-ML.git   # substitute the repo owner
 cd Kestrel-ML
 python -m venv .venv && source .venv/bin/activate
 python -m pip install -r requirements.txt
@@ -102,9 +104,10 @@ Current fixtures, all passing end-to-end:
 
 ## Integration contract
 
-These four functions are the entire seam. They're sync, pure (beyond the news fetch + LLM
-call), and operate on plain dicts/dataclasses — import them, no setup. **Agree on these
-shapes and we can build in parallel** ([`ml_plan.md §7`](ml_plan.md)).
+These four functions are the entire seam between this package and the host application.
+They're sync, pure (beyond the news fetch + LLM call), and operate on plain dicts/dataclasses
+— import them, no setup. Freeze these shapes and the two sides can be built in parallel
+([`ml_plan.md §7`](ml_plan.md)).
 
 ```python
 from datetime import datetime, timezone
@@ -189,6 +192,75 @@ Raise before it's locked (details in [`ml_plan.md §3, §7`](ml_plan.md)):
 Two contract refinements are supersets of the original `ml_plan.md §7` shapes — flag before locking:
 `Transition.note` (a human string; `.as_tuple()` gives the minimal `(state, changed)`), and the
 evaluator's extra `ticker` / `status` fields.
+
+## Further development
+
+The pipeline package is complete and provable in isolation (3 positive + 1 negative
+fixtures, all green). The remaining work is integration and expansion — roughly in
+priority order.
+
+### 1. Wire it into the host application
+
+The scheduler owns the loop; this package owns the judgment. Per poll cycle, for each
+watched ticker:
+
+```python
+articles = news.fetch(ticker, since=last_poll)          # since = your news_seen high-water mark
+verdicts = llm.classify_batch(articles, ticker_catalysts)
+for v in verdicts:
+    new_state, changed = catalysts.apply(current_state[v.catalyst_id], v).as_tuple()
+    # persist v.model_dump() as evidence; update the catalyst's state if changed
+result = evaluator.evaluate(thesis, quant_results, catalyst_states)
+# persist result; if result["signal"] flips true, notify
+```
+
+Dedup by `Article.id` (sha256 of the URL) across polls — Finnhub's `from` is date-granular
+and re-returns the whole day, so the same article recurs until the DB filters it. See the
+[schema asks](#schema-asks-for-v1__initsql) for the columns this needs.
+
+### 2. Demo / replay mode
+
+Add a `--replay <fixture>` flag to the scheduler that feeds
+`eval/fixtures/<event>/articles.json` through the same code path instead of live news, at
+accelerated speed. Any labeled fixture becomes a deterministic, rehearsable demo — the
+catalyst walks `unconfirmed → rumored → confirmed` live in the UI. Essential for showing
+the system work when the live watchlist happens to be quiet.
+
+### 3. Frontend reasoning panel
+
+Consumes the same JSON this package already emits — no new contract. Render each
+`CatalystVerdict` (state, confidence, source kind, reasoning, and the verbatim
+`supporting_quote`) as the agent's evidence trail, and the evaluator output's `blocked_by`
+list as "why this isn't firing yet." Build it against a mock WS feed replaying fixture
+verdicts so it doesn't block on the backend.
+
+### 4. Grow and maintain the eval
+
+- **More fixtures.** Target 6+ labeled events. The hardest negatives — rumors that fizzled,
+  denials, wrong-acquirer M&A — are worth the most, because they're what catch false
+  confirmations. Loop: `eval/backfill.py` (capture + `--keep-match` curation) → hand-label
+  `labels.json` → `eval/replay.py`. Full walkthrough in
+  [`eval/fixtures/README.md`](eval/fixtures/README.md).
+- **Tune prompts against metrics, not vibes.** Edit `pipeline/prompts/*.md`, re-run
+  `python -m eval.replay --all`, diff `eval/results/`. Every verdict records its
+  `prompt_version`, so a metric shift is attributable to a prompt change vs. the data.
+  Commit a replay run alongside each prompt edit so regressions surface in git history.
+
+### 5. Possible v2 directions
+
+- **Catalyst proposals.** Reuse the same news stream to *suggest* catalysts a thesis isn't
+  watching yet (add / remove / update), gated by human approval. This is a distinct
+  classification task with its own prompt, output schema, and eval — not a flag on Pass 2.
+  Share the news fetch, not the pass.
+- **Adaptive valuation thresholds.** Replace static quant conditions (`forward_pe < 28`)
+  with anomaly-relative ones ("8th percentile of its own two-year range"). A separate
+  workstream; joins as a proposal generator.
+
+### Operational
+
+- **Rotate any key that has ever been committed.** Untracking `.env` stops future leaks,
+  not past ones — a key in git history is compromised until rotated at its provider.
+- Prompts are loaded at import and versioned by content hash; `.env` stays local (git-ignored).
 
 ## Notes
 

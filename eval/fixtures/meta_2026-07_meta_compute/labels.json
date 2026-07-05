@@ -1,0 +1,469 @@
+{
+  "event": "meta_2026-07_meta_compute",
+  "ticker": "META",
+  "catalysts": [
+    {
+      "id": "meta_compute",
+      "description": "Meta launches a cloud business (Meta Compute) renting out AI compute capacity to external customers"
+    }
+  ],
+  "labels": [
+    {
+      "article_id": "ddfeca991ecaeaa02925bba16d54ea2f3af3abef9f99798ba7c977db9c0af14f",
+      "catalyst_id": "meta_compute",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Qualcomm Now Has The Pieces To Compete Across The AI Stack: Analyst",
+      "_published_at": "2026-06-29T05:35:26+00:00",
+      "_curation": "sample"
+    },
+    {
+      "article_id": "20dfee7a5e198762fe15a21d7405aaa32326b765ba6d5cdaf82755fa850b1c84",
+      "catalyst_id": "meta_compute",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Sector Update: Tech Stocks Rise Premarket Monday",
+      "_published_at": "2026-06-29T13:14:55+00:00",
+      "_curation": "sample"
+    },
+    {
+      "article_id": "79c7bc6b071a6ba2d650edde69d65044a65b4d3c0deeb6731d7f5da2e83c1d62",
+      "catalyst_id": "meta_compute",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Meta Platforms (META) Exceeds Market Returns: Some Facts to Consider",
+      "_published_at": "2026-06-29T21:45:07+00:00",
+      "_curation": "sample"
+    },
+    {
+      "article_id": "d83a829e963f4435b1504012ea8763b6953ea3e75185a151fd876fcb3c5e6b70",
+      "catalyst_id": "meta_compute",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "You’ve Got Mail, Again: AOL Is Headed Back to Wall Street in Quirky IPO",
+      "_published_at": "2026-06-30T16:30:00+00:00",
+      "_curation": "sample"
+    },
+    {
+      "article_id": "b79b8402fbaa1305ce516b09f96ef1b5a294bce79907f4c22c9c48709c028340",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "UPDATE: 'Meta Platforms Is Developing Plans For A Cloud Infrastructure Business That Will Sell Access To AI Computing Po",
+      "_published_at": "2026-07-01T08:47:49+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "e2698401e54eb26618644dc1c8cefb360d56e67372c3036636b35476c35c6035",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Why Is Nebius Stock Falling Wednesday?",
+      "_published_at": "2026-07-01T09:49:53+00:00",
+      "_curation": "sample"
+    },
+    {
+      "article_id": "a649a96586495a573b8625a0f51ed7a3e28c589d57f6daca9dcb4653e59af75b",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta to build cloud infrastructure business to sell AI compute",
+      "_published_at": "2026-07-01T11:53:12+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "608db913f6e1a3aba84259fee4e5d4bb5b807c47dc4ac4fd6f5be04c81c9dbc6",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta building cloud business to sell excess AI capacity, Bloomberg News reports",
+      "_published_at": "2026-07-01T12:52:01+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "4c2a3cda8ce5ac4d2bee79d0b81bd0fc27bd1a8c84308c2ea62ec96fd969ea9a",
+      "catalyst_id": "meta_compute",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Dow Hits Record, Meta Soars On AI-Cloud Bet: Stock Market Today",
+      "_published_at": "2026-07-01T12:56:13+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "1330779cb1daf3d940d7799e187e19ddf280fc09908c48d335cd4e3f4f5891a2",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta Platforms stock surges 8% on cloud business plans",
+      "_published_at": "2026-07-01T13:12:41+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "736af916fbbfaf1d55666bf4ab9ceadfd084d5e5066f7cc97c643c8fef190edd",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta building cloud business to sell excess AI computing capacity",
+      "_published_at": "2026-07-01T13:17:12+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "aaf85b7391b7bfd4148d021317a8b5321c2e0dbd70025c64ef3c0a997b5024da",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta Rallies On Reported Plan To Launch AI Cloud Business",
+      "_published_at": "2026-07-01T13:17:43+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "889eeb4b11df7f93c0d2b7473e58de361a2d5ed4d286321f53ed0b9de4660a17",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta shares jump on plans to commercialise excess AI computing capacity",
+      "_published_at": "2026-07-01T13:37:43+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "8f9791608e6208f6e08e7b323b2ae18ae8b27cb32cb4337e8c33a02655625d1e",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta Compute Could Trigger a 'Butterfly Effect' in AI Infrastructure — and Fuel a Mag 7 Bounce, Trader Says",
+      "_published_at": "2026-07-01T13:42:18+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "21b590139d9aeb3a97a048e19210aca1e269750b1d77f002dc54f2397cf1ca54",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta, like SpaceX, looks to turn excess AI compute into cash",
+      "_published_at": "2026-07-01T13:43:07+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "1c1b187e0759b0fd395ad14c7f70c0a1cd5ab6199802f4b0571b0a0a2e46ee87",
+      "catalyst_id": "meta_compute",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Meta, CoreWeave, AMD, Salesforce, SpaceX, Nike, and More Stocks That Explain Today’s Market",
+      "_published_at": "2026-07-01T14:11:00+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "104a16ac7ad5896e8d2b0187fd74173fc02822037e879fdf49486d7d70bc2ca1",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "CoreWeave and Nebius shares slide after Meta cloud expansion report (CRWV)",
+      "_published_at": "2026-07-01T14:11:41+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "e6bda1c49135538c8388b218a53b8506558d2833c8873578cffee99c539a5a31",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta Platforms Jumps 10% on Potential Plans to Sell AI Compute, Challenging Amazon, Microsoft, Google",
+      "_published_at": "2026-07-01T14:31:38+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "c1f22ef530788b86e377ec5abd448172d1537e81d93fc782c5182834f1d48f9a",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta Is Looking To Go The SpaceX Way, Could Rent Out AI Infrastructure – META Stock Sees Biggest Single-Day Gains In Ove",
+      "_published_at": "2026-07-01T14:46:24+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "a8ea5cfaaf1b535b40080a6d817f943af52344874f3e94dc618fa18965ad90c7",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Wall Street Lunch: Meta's AI Cloud Bet Lifts Shares, Hits Neocloud Rivals",
+      "_published_at": "2026-07-01T14:50:00+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "1bd7628e1679cc7273ac5aec01ff0d96655d0b15e054bf01846677a7deb2f0b2",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta Stock Rallies On Reported Plan For AI Cloud Business; CoreWeave Slides",
+      "_published_at": "2026-07-01T14:52:46+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "b3f05359a76d2eacbe43b73be5190d6f7a7b9334d53544aee52d0891efa3a7ae",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta to reportedly rent out excess AI compute, joining the ranks of Amazon & Microsoft",
+      "_published_at": "2026-07-01T15:12:09+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "72616e042d87e6912425f59eb5693fcae99a06935e1eb73275cb357b65c502c0",
+      "catalyst_id": "meta_compute",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "China brings in new rules to shield outbound investors",
+      "_published_at": "2026-07-01T16:15:06+00:00",
+      "_curation": "sample"
+    },
+    {
+      "article_id": "2e9c8a0d6c2282314126b7dd76778365ea53605632e834ad7ba97171e8bf591e",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta motors on chip sale strategy",
+      "_published_at": "2026-07-01T18:21:00+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "9e5bd18d609079653de0ce3b855dade60f28f97cb9aada3007988092635fa5eb",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta Is Looking to Launch a Cloud Computing Business. Its Stock Is Popping",
+      "_published_at": "2026-07-01T18:39:12+00:00",
+      "_curation": "sample"
+    },
+    {
+      "article_id": "6d82d1976351f8e3f67d56102f2e2eb188a54737bce02136b076e43201a7b26c",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Why Is Meta (META) Stock Soaring Today",
+      "_published_at": "2026-07-01T18:57:00+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "9c2af53fb0e49a1ceaa68e32c13fa7589e22723ec77a54f184c777a9c6ad840e",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "META Stock Pops on Reports of New Cloud Business",
+      "_published_at": "2026-07-01T21:31:45+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "be73046e35bd62ab4a98507d0be2fd0bdc39d8d27ad330ea853266740eda38d7",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta Compute Launch Sends AI Compute Stocks Tumbling Globally",
+      "_published_at": "2026-07-02T01:52:58+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "27cbd9c05de630ba89ab695f0e5db0ec5e06108b190212f28b5a6b3fd7441653",
+      "catalyst_id": "meta_compute",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Trump Hails S&P 500's Best Quarter Since 2020 as US-Iran Indirect Talks Wrap Up",
+      "_published_at": "2026-07-02T02:19:19+00:00",
+      "_curation": "sample"
+    },
+    {
+      "article_id": "3008ff9de6c905f7e252ccc0d1e0178f53f15f1866eaceb31c3cfd53efd9eea4",
+      "catalyst_id": "meta_compute",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "SoftBank Plans AI Cloud Services in US to Tap Surging Demand",
+      "_published_at": "2026-07-02T07:31:06+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "bb566fed6388a57a2427d20c93675b786e392a5cae5622aa92afee325fcb0ecb",
+      "catalyst_id": "meta_compute",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "CoreWeave: Meta Compute Scare Is A Long-Term Buying Opportunity",
+      "_published_at": "2026-07-02T08:30:00+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "db166c94d3e00456f28963a52bc6c924e5649e5ddeca431839718de7dfaa1264",
+      "catalyst_id": "meta_compute",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "SpaceX Analyst Debut Set to Test $2.2 Trillion Valuation",
+      "_published_at": "2026-07-02T08:41:17+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "30848c0b28c58e5e713b81a3c3556ab38148a23412750bb8bb9d9fb4641a90b7",
+      "catalyst_id": "meta_compute",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "AI Weekly: Anthropic controls lifted, Meta in the clouds",
+      "_published_at": "2026-07-02T10:21:13+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "84e4cdf6c9ea35c609a046abef4428df755bad03a00b5187bccfd8afc84a7a9f",
+      "catalyst_id": "meta_compute",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "OpenAI proposes 5% stake to U.S. government for AI wealth fund",
+      "_published_at": "2026-07-02T11:16:55+00:00",
+      "_curation": "sample"
+    },
+    {
+      "article_id": "eb8c906b0273e3fced536711796471cba5e36874ce71382ee1e272ed75a367b7",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "CRWV Stock Saw Its Worst Selloff In Over 4 Months On META's Cloud Computing Plans — Wall Street Now Thinks It's A Buying",
+      "_published_at": "2026-07-02T12:28:44+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "68cd7d14a60a9dd8532ffc5db91bbc01c64c5f0b06fdaf47ce3e3b31ab244195",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta’s Potential AI Cloud Business Could Drive Higher Capex to Build Out Infrastructure, BofA Says",
+      "_published_at": "2026-07-02T12:31:33+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "6f24df76083d5e975809c9b49960fc1cc29b59bb77955ec31c8271613fa6d7fb",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta Jumps 9.3% on Plans for AI Cloud Infrastructure Business",
+      "_published_at": "2026-07-02T12:51:26+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "9a6915272a7b9d487adf59b5d07b6fb13f00372ba8bf840fc9a9c485a2c05f09",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Why Meta Platforms Stock Crashed Thursday Morning",
+      "_published_at": "2026-07-02T15:20:12+00:00",
+      "_curation": "sample"
+    },
+    {
+      "article_id": "70300b25807bf17bb1b79b8017fddb07553c902f42eadf8349ced23a1b6ce8e6",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta-Fueled Selloff Is a CoreWeave Stock Buying Opportunity, Analysts Say",
+      "_published_at": "2026-07-02T15:54:00+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "8badf33ab679e22165d68f933f8bb0fcc100df068822032027ee36ec12dd2bc7",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta (META) Stock May Be 21% Undervalued Despite Meta Compute Launch",
+      "_published_at": "2026-07-02T17:08:59+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "e0d96811481d604df30bc510bc2242c0b6eef99106a4facb336a51a84e450e68",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta Wants to Sell You Its AI Compute. AWS, Azure, and Google Just Got a New Rival",
+      "_published_at": "2026-07-02T17:10:55+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "1d866e44ffc0385a4e3198d6fc256b0b5a3206e41250c5beca0df4566158b8ef",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Senior Analyst: Meta Is Chasing A $2 Trillion AI Compute Opportunity, But It’s Years Behind",
+      "_published_at": "2026-07-02T17:15:16+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "30d72486833e3c88ba5c42664bd7b8e921d205129402b4f30d614d6e9c9caab7",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "CoreWeave Takes Another Hit From Meta. One Analyst Sees 200% Upside for the AI Stock.",
+      "_published_at": "2026-07-02T17:27:00+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "3225175ce86a38f2af9aa98bd9b1388479e1f7c7cfe1ab3d6d8aae3f6968069a",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Meta Eyes Cloud Business for AI Capacity",
+      "_published_at": "2026-07-02T18:36:05+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "ccdf85eaad9c350b198a1cf76ccb2a028553b59935404048eb518ce3798bf351",
+      "catalyst_id": "meta_compute",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Mark Zuckerberg Admits AI Bets 'Haven't Come to Fruition Yet' and Meta Layoffs Were 'Not as Clean' as Planned: Report",
+      "_published_at": "2026-07-02T22:11:31+00:00",
+      "_curation": "sample"
+    },
+    {
+      "article_id": "a26c02c405d3dee3a5a27dc6f59d85facb2e4d087cfabd82bd50863f604ef6d7",
+      "catalyst_id": "meta_compute",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "The Mag Seven Could Become Magnificent Again in the Second Half, Says Pro",
+      "_published_at": "2026-07-03T12:41:52+00:00",
+      "_curation": "sample"
+    },
+    {
+      "article_id": "fa7ae6f3d3dc80cf3d9148edb373b17061d9dd5b3d5f545606b54782bfa0a6d4",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Jim Cramer Says Meta Is Entering AI's 'Most Lucrative Game,' JPMorgan Thinks It Could Be A $20 Billion Business",
+      "_published_at": "2026-07-04T12:01:26+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "90c99e64ad212fede038b25775e01af88dcbec9ae21b57447da6d81d2a37a351",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Meta (META) Launches Meta Compute To Sell AI Power Beyond Advertising",
+      "_published_at": "2026-07-04T13:16:18+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "67db0798c700a7f7a5e8e178fec6e262bf7ccae2fe277f06df8abd55e6c2857b",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Meta’s next AI bet has one major catch for investors",
+      "_published_at": "2026-07-04T21:47:00+00:00",
+      "_curation": "keyword-match"
+    },
+    {
+      "article_id": "d0067d47a256445da7cc125f3c9c067754323b65fabb161b7ab4e6656715a3a6",
+      "catalyst_id": "meta_compute",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Why CoreWeave Stock Plummeted This Week",
+      "_published_at": "2026-07-05T11:38:42+00:00",
+      "_curation": "keyword-match"
+    }
+  ],
+  "expected_final": {
+    "meta_compute": "confirmed"
+  },
+  "expected_confirm_article": {
+    "meta_compute": "90c99e64ad212fede038b25775e01af88dcbec9ae21b57447da6d81d2a37a351"
+  },
+  "_label_policy": "Positive fixture with a real rumor->confirmed arc: Bloomberg reported the plan 2026-07-01 (all coverage hedged: 'reportedly', 'plans to', 'developing') -> rumored; 'Meta Launches Meta Compute' stated as fact 2026-07-04 -> confirmed. rumored = hedged report/prediction of the move, incl. reaction stories whose text reports it. confirmed = launch/entry stated as accomplished fact. irrelevant = market wraps and other-company pieces without a direct report of the move. Review rows: 8badf33ab679 (headline says 'Launch' on 07-02, body is valuation talk -> drafted rumored), 30848c0b28c5/bb566fed6388 (roundup/CRWV pieces -> drafted irrelevant). Drafted by Claude 2026-07-05 — Amelia to review."
+}

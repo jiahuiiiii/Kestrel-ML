@@ -1,0 +1,126 @@
+{
+  "event": "meta_2026-07_meta_compute",
+  "ran_at": "2026-07-05T13:28:16.453329+00:00",
+  "n_articles": 50,
+  "n_labeled_pairs": 50,
+  "pass1": {
+    "kept_pairs": 39,
+    "true_positives": 35,
+    "false_positives": 4,
+    "missed_relevant": [],
+    "precision": 0.8974,
+    "recall": 1.0,
+    "unlabeled_kept": 0
+  },
+  "pass2": {
+    "judged_pairs": 39,
+    "confusion": {
+      "rumored": {
+        "rumored": 29,
+        "confirmed": 2,
+        "no_change": 1
+      },
+      "no_change": {
+        "rumored": 3,
+        "no_change": 1
+      },
+      "confirmed": {
+        "confirmed": 2,
+        "rumored": 1
+      }
+    },
+    "confirmed_precision": 0.5,
+    "confirmed_recall": 0.6667,
+    "quote_validity": 1.0,
+    "mismatches": [
+      {
+        "article_id": "4c2a3cda8ce5",
+        "catalyst_id": "meta_compute",
+        "expected": "no_change",
+        "predicted": "rumored",
+        "guard_note": null
+      },
+      {
+        "article_id": "1c1b187e0759",
+        "catalyst_id": "meta_compute",
+        "expected": "no_change",
+        "predicted": "rumored",
+        "guard_note": null
+      },
+      {
+        "article_id": "be73046e35bd",
+        "catalyst_id": "meta_compute",
+        "expected": "rumored",
+        "predicted": "confirmed",
+        "guard_note": null
+      },
+      {
+        "article_id": "30848c0b28c5",
+        "catalyst_id": "meta_compute",
+        "expected": "no_change",
+        "predicted": "rumored",
+        "guard_note": null
+      },
+      {
+        "article_id": "eb8c906b0273",
+        "catalyst_id": "meta_compute",
+        "expected": "rumored",
+        "predicted": "no_change",
+        "guard_note": null
+      },
+      {
+        "article_id": "8badf33ab679",
+        "catalyst_id": "meta_compute",
+        "expected": "rumored",
+        "predicted": "confirmed",
+        "guard_note": null
+      },
+      {
+        "article_id": "67db0798c700",
+        "catalyst_id": "meta_compute",
+        "expected": "confirmed",
+        "predicted": "rumored",
+        "guard_note": null
+      }
+    ]
+  },
+  "end_to_end": {
+    "ok": false,
+    "per_catalyst": {
+      "meta_compute": {
+        "final_state": "confirmed",
+        "expected_final": "confirmed",
+        "final_ok": true,
+        "first_confirmed_at": "2026-07-02T01:52:58+00:00",
+        "confirm_article_ok": false,
+        "premature_confirm": true
+      }
+    }
+  },
+  "timelines": {
+    "meta_compute": [
+      {
+        "at": "2026-07-01T08:47:49+00:00",
+        "article_id": "b79b8402fbaa",
+        "from": "unconfirmed",
+        "to": "rumored",
+        "note": "raised to rumored"
+      },
+      {
+        "at": "2026-07-02T01:52:58+00:00",
+        "article_id": "be73046e35bd",
+        "from": "rumored",
+        "to": "confirmed",
+        "note": "confirmed by a credible source"
+      }
+    ]
+  },
+  "prompt_versions": {
+    "pass1_relevance": "4eaaf5969c8b",
+    "pass2_confirmation": "7cd4adde41da"
+  },
+  "models": {
+    "pass1": "gpt-5.4-mini",
+    "pass2": "gpt-5.4"
+  }
+}

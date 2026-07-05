@@ -1,0 +1,96 @@
+{
+  "event": "Oracle_fired_21,000_workers",
+  "ran_at": "2026-07-05T13:29:41.137149+00:00",
+  "n_articles": 46,
+  "n_labeled_pairs": 46,
+  "pass1": {
+    "kept_pairs": 25,
+    "true_positives": 25,
+    "false_positives": 0,
+    "missed_relevant": [
+      "72ced60641e5/orcl_layoff"
+    ],
+    "precision": 1.0,
+    "recall": 0.9615,
+    "unlabeled_kept": 0
+  },
+  "pass2": {
+    "judged_pairs": 25,
+    "confusion": {
+      "no_change": {
+        "no_change": 1,
+        "confirmed": 2,
+        "rumored": 1
+      },
+      "confirmed": {
+        "confirmed": 20,
+        "rumored": 1
+      }
+    },
+    "confirmed_precision": 0.9091,
+    "confirmed_recall": 0.9524,
+    "quote_validity": 1.0,
+    "mismatches": [
+      {
+        "article_id": "d5fd509f33f6",
+        "catalyst_id": "orcl_layoff",
+        "expected": "confirmed",
+        "predicted": "rumored",
+        "guard_note": null
+      },
+      {
+        "article_id": "1791dc5a6604",
+        "catalyst_id": "orcl_layoff",
+        "expected": "no_change",
+        "predicted": "confirmed",
+        "guard_note": null
+      },
+      {
+        "article_id": "a6706e08cea5",
+        "catalyst_id": "orcl_layoff",
+        "expected": "no_change",
+        "predicted": "rumored",
+        "guard_note": null
+      },
+      {
+        "article_id": "2a1d207a1d21",
+        "catalyst_id": "orcl_layoff",
+        "expected": "no_change",
+        "predicted": "confirmed",
+        "guard_note": null
+      }
+    ]
+  },
+  "end_to_end": {
+    "ok": true,
+    "per_catalyst": {
+      "orcl_layoff": {
+        "final_state": "confirmed",
+        "expected_final": "confirmed",
+        "final_ok": true,
+        "first_confirmed_at": "2026-06-22T20:44:31+00:00",
+        "confirm_article_ok": true,
+        "premature_confirm": false
+      }
+    }
+  },
+  "timelines": {
+    "orcl_layoff": [
+      {
+        "at": "2026-06-22T20:44:31+00:00",
+        "article_id": "2feb4d28916a",
+        "from": "unconfirmed",
+        "to": "confirmed",
+        "note": "confirmed by a credible source"
+      }
+    ]
+  },
+  "prompt_versions": {
+    "pass1_relevance": "4eaaf5969c8b",
+    "pass2_confirmation": "7cd4adde41da"
+  },
+  "models": {
+    "pass1": "gpt-5.4-mini",
+    "pass2": "gpt-5.4"
+  }
+}

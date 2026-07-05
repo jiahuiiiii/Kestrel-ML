@@ -1,0 +1,387 @@
+{
+  "event": "Oracle_fired_21,000_workers",
+  "ticker": "ORCL",
+  "catalysts": [
+    {
+      "id": "orcl_layoff",
+      "description": "Oracle disclosed cutting roughly 21,000 jobs (about 13% of its workforce) in fiscal 2026"
+    }
+  ],
+  "labels": [
+    {
+      "article_id": "12ff7fce56dd93630bd3e52c9014be60c4549cf7e02f54ee154e50c0f799fc92",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "AI buildout gives tech investors new reasons to watch bond market",
+      "_published_at": "2026-06-20T08:00:01+00:00"
+    },
+    {
+      "article_id": "7b9f8af3707634943d1598009663c715051efd022a9e655c018fed4b21a1a5bd",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Mid-Market Expansion Gains Traction: Can INTU Unlock a $90B Opportunity?",
+      "_published_at": "2026-06-22T14:03:00+00:00"
+    },
+    {
+      "article_id": "f4232b2d9b5b01742ab8599a83aff53db4575eed3b17acd99e32b6993ccb13de",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Oracle Says As Of May 31, We Employed ~141,000 Full-time Employees",
+      "_published_at": "2026-06-22T16:27:58+00:00"
+    },
+    {
+      "article_id": "2feb4d28916a2f7f4e855eecdef72e92caa53dcc70a66ae1eae4aef574f446d9",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Oracle workforce shrinks by about 21,000 employees amid AI adoption",
+      "_published_at": "2026-06-22T20:44:31+00:00"
+    },
+    {
+      "article_id": "796877ed9bf29ae55c6c99608b0443e896b5dbea8085726ee5ee78ec5c5714ce",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Oracle (ORCL) Cuts 21,000 Jobs As It Prepares $50 Billion AI Buildout",
+      "_published_at": "2026-06-22T22:10:26+00:00"
+    },
+    {
+      "article_id": "d5fd509f33f6e0ad9744f2331bd1cddfda773829e2ae4e5ca928904096bd7847",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "ORCL Stock At Nearly 2-Month Low: 'Big Red' Reportedly Trimmed Workforce By 13% In FY26 On AI Efficiency",
+      "_published_at": "2026-06-23T05:03:46+00:00"
+    },
+    {
+      "article_id": "ea5f88af8327360665050db0e7c83203935bc3d4cd52f61f8acd29330d038a3e",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Oracle sheds 21,000 roles over the past year amid wave of AI layoffs from tech giants",
+      "_published_at": "2026-06-23T06:09:14+00:00"
+    },
+    {
+      "article_id": "ef9c0cda30aa80b35aa9b4334bf677b14a0d26285dc5b01cd97722e1d2aae555",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Oracle slashes 21,000 jobs, citing strategy and AI-led overhaul",
+      "_published_at": "2026-06-23T07:09:08+00:00"
+    },
+    {
+      "article_id": "5a26614e7471ba027474cc924bf39e28706ba052fa9d92287915cca16ebe0444",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Oracle Stock In Focus After Annual Filing Reveals 21,000 Job Cuts Amid AI Buildout Costs",
+      "_published_at": "2026-06-23T07:42:42+00:00"
+    },
+    {
+      "article_id": "54d1fea4257d4055ffaf81ad879f13aac7b9db23b4343353688f782fc294717d",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Larry Ellison cuts 21,000 jobs at Oracle as AI replaces human workers",
+      "_published_at": "2026-06-23T08:06:55+00:00"
+    },
+    {
+      "article_id": "71cab343ba58b93f99cdbe44d68b74a5e4dfd8223cd9e87b4b194a5995f49a66",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "SpaceX Rout Set to Push Market Value Below $2 Trillion",
+      "_published_at": "2026-06-23T08:41:31+00:00"
+    },
+    {
+      "article_id": "09995355b7abc9e9a1b33fcb567b5f6231de87d36203ec36cbafc69ef66a9ac6",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Oracle workforce shrinks by about 21,000 amid AI adoption",
+      "_published_at": "2026-06-23T10:11:33+00:00"
+    },
+    {
+      "article_id": "72ced60641e506382aee29814b9dabb8abccb97f26d2a611c712eedaa553b4e8",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Options traders buy calls in Oracle following AI-driven layoffs",
+      "_published_at": "2026-06-23T11:14:08+00:00"
+    },
+    {
+      "article_id": "f4fb9260e06afe8e39a6d88d1d5d5fb6a1c03ebbfa21a86702c4829e64e08e7c",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Oracle’s AI Push Led to 21,000 Job Cuts Last Year but Didn’t Lead to Stock Gains",
+      "_published_at": "2026-06-23T11:34:00+00:00"
+    },
+    {
+      "article_id": "25aca0d4bed94a9aeddd1005674ea00c4bf8b5c288abd6931da52761f2a5e5af",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Oracle's 21,000-Job Cut Puts AI Savings in Focus",
+      "_published_at": "2026-06-23T12:34:24+00:00"
+    },
+    {
+      "article_id": "83a3de669aa1aa40bbde06450c737d7ccb9d5261d326e3c78ad6c047bfdca2c0",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Oracle cuts 21,000 jobs, citing AI adoption, in fiscal 2026",
+      "_published_at": "2026-06-23T12:47:28+00:00"
+    },
+    {
+      "article_id": "4a8ba3c0e5cdeedae5c617747a5c5a416f75343bbb7cbe19b24264ec7e85733b",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Oracle Cut 21,000 Jobs Last Year As AI Costs Surged",
+      "_published_at": "2026-06-23T12:50:11+00:00"
+    },
+    {
+      "article_id": "066be1fb7f0061bc49567e7e20b7e91f72de4a19d3cf53a0f3bb47337fd81a98",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Oracle cuts 21,000 jobs over past year as it adopts AI",
+      "_published_at": "2026-06-23T13:40:00+00:00"
+    },
+    {
+      "article_id": "12ae96451b14d3b702c37e05a6d1f3ca16d5358005566c6fd95f4e9fad882749",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Did Oracle Need To Fire 21,000 Because It Is In Trouble?",
+      "_published_at": "2026-06-23T14:01:44+00:00"
+    },
+    {
+      "article_id": "c28ae001e8a442003a1e5602ced34f8209a202eb9f90647ce82fbd85775235bd",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Oracle cut 21,000 jobs in past year amid AI shift",
+      "_published_at": "2026-06-23T14:26:08+00:00"
+    },
+    {
+      "article_id": "1791dc5a660498673285c21389126f1026e070e83e417a53266dc896fff3e298",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Top Midday Stories: Energy Department to Provide $17.5 Billion in Loans for Nuclear Reactors; Oracle Shrank Workforce by",
+      "_published_at": "2026-06-23T15:39:41+00:00"
+    },
+    {
+      "article_id": "d884acb6fd99815e4f7eae55840c12401b438af328c50caf1ec994b5b53c92a5",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Oracle Cuts Jobs as AI Reshapes Operations",
+      "_published_at": "2026-06-23T16:13:27+00:00"
+    },
+    {
+      "article_id": "6c1530390e3067bf1a3da70461775af119d7e65c517b72454d5c6613dcfa8594",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Oracle Reveals 21,000 Job Cuts as AI Adoption Reshapes Workforce",
+      "_published_at": "2026-06-23T19:02:22+00:00"
+    },
+    {
+      "article_id": "45497de34f62ae3b1fa04c823edfc49ffc1c4845e6ac32a089b48b33c475f7b2",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "ORCL Stock Layoffs: What to Know as Oracle Cuts 21,000 Jobs",
+      "_published_at": "2026-06-23T19:32:34+00:00"
+    },
+    {
+      "article_id": "ca0915fd9937d0c58f1feb972644373552787762d5a284b69b60d8a8b750c052",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Oracle Stock Falls As Annual Filing Reveals 21,000 Jobs Cut, Jump In AI Spending",
+      "_published_at": "2026-06-23T20:11:00+00:00"
+    },
+    {
+      "article_id": "67a6adce3a48f303455c6dc5d41e9a776a2a68b979638f6006eb3e8aef08240e",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Elizabeth Warren Warns AI Could Eliminate Millions Of Jobs As Oracle Becomes Latest Big Tech To Reveal 21,000 Workforce ",
+      "_published_at": "2026-06-24T00:39:50+00:00"
+    },
+    {
+      "article_id": "47f3dab8ea16e4f502ec8facfabddb566f716e79f0e4e3a2c88fea3d04760d3d",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Retail investors are looking for the next stock to buy, says Cboe's JJ Kinahan",
+      "_published_at": "2026-06-24T07:08:40+00:00"
+    },
+    {
+      "article_id": "a6706e08cea5205c71d928417d9de0dc3faa43d4dde5a7bcd32a361bcae7904a",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Are Job Cuts Impacting Oracle Stock? Here's What's Happening Wednesday",
+      "_published_at": "2026-06-24T13:00:35+00:00"
+    },
+    {
+      "article_id": "57b4b299676886fd8bc85550a98ba25b3419df3c7b16687f78eba7a1e7608415",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Oracle's Headcount Fell by 21,000 as AI Reshapes Its Business. Here's What It Means for the Stock.",
+      "_published_at": "2026-06-24T18:26:00+00:00"
+    },
+    {
+      "article_id": "2a1d207a1d219b63e8df310963b080205771a1a4b422dacccce89b5acc56033a",
+      "catalyst_id": "orcl_layoff",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Is Oracle (ORCL) One of the Top 10 Blue Chip Stocks with Growing Dividends?",
+      "_published_at": "2026-06-25T03:47:49+00:00"
+    },
+    {
+      "article_id": "03d1b176fc0e5b6d02e7e8015878a998607b90c4788809c620a192c6b68407ee",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "4 Signs Of A Schizophrenic Market",
+      "_published_at": "2026-06-25T13:09:45+00:00"
+    },
+    {
+      "article_id": "3443b27417efd03d4fba8c0bfdab883fc1172b3b5edc7c75172319d140c8c9c4",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Bloom Energy CEO Went From Oil To NASA To Fuel Cells, Now He’s A Billionaire",
+      "_published_at": "2026-06-25T15:38:26+00:00"
+    },
+    {
+      "article_id": "d26b13b46dd6d8d8768e377b01a3d550b2c3eb3a130a9abb3646a60b01f0a653",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Wall Street Roundup: What Isn't Priced In?",
+      "_published_at": "2026-06-26T14:14:00+00:00"
+    },
+    {
+      "article_id": "238acd14084f0922acd2c86b6710207a8a3d4a4851a38bc24410936e27cd6a01",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Oracle (ORCL) Launches Fusion Agentic Applications to Automate Supply Chain Management Tasks",
+      "_published_at": "2026-06-30T11:46:27+00:00"
+    },
+    {
+      "article_id": "b21017b97e36e762d50c387eff6bb6caa0419ac374ac2453139ed4b0d025a3e9",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Investors Heavily Search Oracle Corporation (ORCL): Here is What You Need to Know",
+      "_published_at": "2026-06-30T13:00:10+00:00"
+    },
+    {
+      "article_id": "2fe924e0e7221294ba690c14e4fbba4b21a5bbcd68b0e6caa1e4b3d4d49670ec",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Oracle Helps Organizations Scale Effective Leadership with Oracle Manager Edge",
+      "_published_at": "2026-06-30T17:07:00+00:00"
+    },
+    {
+      "article_id": "5550af8b98aae6d7b12721f6127b702ab3acd6806c34ab547f24faeaa5a4a83b",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Dan Ives Says SpaceX Looks Expensive, But Elon Musk-Led SPCX Could Become 'One of the Best AI Plays'",
+      "_published_at": "2026-07-01T01:36:29+00:00"
+    },
+    {
+      "article_id": "c1136a82bafa182d9a5ec9dfee648843a6c927388407e3eee2066b55ca4f9408",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Bloom Energy Stock Eyes New Highs as AI Data Center Demand Drives a $25 Billion Deal",
+      "_published_at": "2026-07-01T12:39:00+00:00"
+    },
+    {
+      "article_id": "a3e1901c6b184e8fcb6b8927b869171a5dd4da84aeac94af75b86f9df5a366fd",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Oracle Shares Climb After William Blair Names It Top AI Pick",
+      "_published_at": "2026-07-01T18:32:25+00:00"
+    },
+    {
+      "article_id": "ea8c88e82abdfa959c43d6dd309fa2328631ba4c095b8d88b4f93d0d90d8e1ee",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Oracle (ORCL) Unveils AI Agents For Supply Chains And Manager Coaching",
+      "_published_at": "2026-07-01T23:20:30+00:00"
+    },
+    {
+      "article_id": "ec7126b8d8e1a6cc95f2f948231f25fb110c4969290e3b3549438bfaa7dcd46f",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Zoom and C3.ai Shares Are Soaring, What You Need To Know",
+      "_published_at": "2026-07-02T00:09:00+00:00"
+    },
+    {
+      "article_id": "942df35f0bc7f339847f6c4d05c1ffb5c0375ccee3d7a8fa07f0c3e6234e3f59",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Oracle stock falls for a seventh session as filing risk lands",
+      "_published_at": "2026-07-02T04:37:00+00:00"
+    },
+    {
+      "article_id": "379c2fff8df2e11f29f58476155111ef43e1c7212eede1740350f4aa7cca2544",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Is Oracle (ORCL) One of the Cheap Stocks That Are About to Explode?",
+      "_published_at": "2026-07-02T22:12:41+00:00"
+    },
+    {
+      "article_id": "2501ec271d60430e13d00ebaddb591ba8d29a8d3c2b68ff651309330cbda482a",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Is Oracle's New AI Agent Suite Quietly Rewriting Its Data Center Story (ORCL)?",
+      "_published_at": "2026-07-03T00:23:09+00:00"
+    },
+    {
+      "article_id": "dfd312e144396970777d82e83232eabc530c0347320a59adaa5407734c783cae",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Rimini Street (RMNI) Partners With One New Zealand, Here’s What You Need to Know",
+      "_published_at": "2026-07-03T13:12:02+00:00"
+    },
+    {
+      "article_id": "6636a92b39d47543dac21478a8b7d7b40c5b1a9ff353fc8a024401f5d6bfce9b",
+      "catalyst_id": "orcl_layoff",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Snowflake Gains 6% in a Month: Should You Buy, Sell, or Hold the Stock?",
+      "_published_at": "2026-07-03T14:15:00+00:00"
+    }
+  ],
+  "expected_final": {
+    "orcl_layoff": "confirmed"
+  },
+  "expected_confirm_article": {
+    "orcl_layoff": "2feb4d28916a2f7f4e855eecdef72e92caa53dcc70a66ae1eae4aef574f446d9"
+  },
+  "_label_policy": "Positive fixture. Oracle's FY2026 annual filing (2026-06-22) disclosed headcount fell ~21,000 (13%) y/y; a reporting wave followed 06-23. confirmed = states the ~21,000/13% cut as fact. no_change = on-topic but doesn't state the cut (bare headcount, stock reaction, digests). irrelevant = ORCL product launches / other companies. No rumor phase — the news broke straight to confirmed on the filing. Drafted by Claude 2026-07-05, REVIEW before trusting metrics."
+}

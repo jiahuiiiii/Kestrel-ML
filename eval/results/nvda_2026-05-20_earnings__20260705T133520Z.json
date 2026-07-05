@@ -1,0 +1,97 @@
+{
+  "event": "nvda_2026-05-20_earnings",
+  "ran_at": "2026-07-05T13:35:20.063041+00:00",
+  "n_articles": 50,
+  "n_labeled_pairs": 50,
+  "pass1": {
+    "kept_pairs": 36,
+    "true_positives": 32,
+    "false_positives": 4,
+    "missed_relevant": [],
+    "precision": 0.8889,
+    "recall": 1.0,
+    "unlabeled_kept": 0
+  },
+  "pass2": {
+    "judged_pairs": 36,
+    "confusion": {
+      "no_change": {
+        "no_change": 17,
+        "rumored": 1
+      },
+      "rumored": {
+        "rumored": 11,
+        "no_change": 1
+      },
+      "confirmed": {
+        "rumored": 1,
+        "confirmed": 5
+      }
+    },
+    "confirmed_precision": 1.0,
+    "confirmed_recall": 0.8333,
+    "quote_validity": 1.0,
+    "mismatches": [
+      {
+        "article_id": "913b87dde8d7",
+        "catalyst_id": "earnings_beat",
+        "expected": "rumored",
+        "predicted": "no_change",
+        "guard_note": null
+      },
+      {
+        "article_id": "a8980c64d65f",
+        "catalyst_id": "earnings_beat",
+        "expected": "confirmed",
+        "predicted": "rumored",
+        "guard_note": null
+      },
+      {
+        "article_id": "21ac48e1155f",
+        "catalyst_id": "earnings_beat",
+        "expected": "no_change",
+        "predicted": "rumored",
+        "guard_note": null
+      }
+    ]
+  },
+  "end_to_end": {
+    "ok": false,
+    "per_catalyst": {
+      "earnings_beat": {
+        "final_state": "confirmed",
+        "expected_final": "confirmed",
+        "final_ok": true,
+        "first_confirmed_at": "2026-05-21T02:24:59+00:00",
+        "confirm_article_ok": false,
+        "premature_confirm": false
+      }
+    }
+  },
+  "timelines": {
+    "earnings_beat": [
+      {
+        "at": "2026-05-18T06:52:02+00:00",
+        "article_id": "f55e191726a7",
+        "from": "unconfirmed",
+        "to": "rumored",
+        "note": "raised to rumored"
+      },
+      {
+        "at": "2026-05-21T02:24:59+00:00",
+        "article_id": "118149e7d3e3",
+        "from": "rumored",
+        "to": "confirmed",
+        "note": "confirmed by a credible source"
+      }
+    ]
+  },
+  "prompt_versions": {
+    "pass1_relevance": "4eaaf5969c8b",
+    "pass2_confirmation": "a9d4abe9a628"
+  },
+  "models": {
+    "pass1": "gpt-5.4-mini",
+    "pass2": "gpt-5.4"
+  }
+}

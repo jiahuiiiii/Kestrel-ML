@@ -52,7 +52,7 @@
       "article_id": "d5fd509f33f6e0ad9744f2331bd1cddfda773829e2ae4e5ca928904096bd7847",
       "catalyst_id": "orcl_layoff",
       "relevant": true,
-      "expected_state": "confirmed",
+      "expected_state": "rumored",
       "_headline": "ORCL Stock At Nearly 2-Month Low: 'Big Red' Reportedly Trimmed Workforce By 13% In FY26 On AI Efficiency",
       "_published_at": "2026-06-23T05:03:46+00:00"
     },
@@ -383,5 +383,5 @@
   "expected_confirm_article": {
     "orcl_layoff": "2feb4d28916a2f7f4e855eecdef72e92caa53dcc70a66ae1eae4aef574f446d9"
   },
-  "_label_policy": "Positive fixture. Oracle's FY2026 annual filing (2026-06-22) disclosed headcount fell ~21,000 (13%) y/y; a reporting wave followed 06-23. confirmed = states the ~21,000/13% cut as fact. no_change = on-topic but doesn't state the cut (bare headcount, stock reaction, digests). irrelevant = ORCL product launches / other companies. No rumor phase — the news broke straight to confirmed on the filing. Drafted by Claude 2026-07-05, REVIEW before trusting metrics."
+  "_label_policy": "Positive fixture. Oracle's FY2026 annual filing (2026-06-22) disclosed headcount fell ~21,000 (13%) y/y; a reporting wave followed 06-23. confirmed = states the ~21,000/13% cut as fact. rumored = hedged phrasing ('reportedly') even when citing the filing. no_change = on-topic but doesn't state the cut. irrelevant = ORCL product launches / other companies. REVIEWED by Amelia 2026-07-05: d5fd509f33f6 -> rumored ('reportedly' is a deliberate hedge — her call, overriding the draft). Still pending her review: 1791dc5a6604 + 2a1d207a1d21 (digests stating the cut in passing, drafted no_change) and the 15 _curation=sample rows. Rest drafted by Claude."
 }

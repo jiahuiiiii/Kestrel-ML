@@ -299,8 +299,8 @@
     {
       "article_id": "30848c0b28c58e5e713b81a3c3556ab38148a23412750bb8bb9d9fb4641a90b7",
       "catalyst_id": "meta_compute",
-      "relevant": false,
-      "expected_state": "no_change",
+      "relevant": true,
+      "expected_state": "rumored",
       "_headline": "AI Weekly: Anthropic controls lifted, Meta in the clouds",
       "_published_at": "2026-07-02T10:21:13+00:00",
       "_curation": "keyword-match"
@@ -362,8 +362,8 @@
     {
       "article_id": "8badf33ab679e22165d68f933f8bb0fcc100df068822032027ee36ec12dd2bc7",
       "catalyst_id": "meta_compute",
-      "relevant": true,
-      "expected_state": "rumored",
+      "relevant": false,
+      "expected_state": "no_change",
       "_headline": "Meta (META) Stock May Be 21% Undervalued Despite Meta Compute Launch",
       "_published_at": "2026-07-02T17:08:59+00:00",
       "_curation": "keyword-match"
@@ -465,5 +465,5 @@
   "expected_confirm_article": {
     "meta_compute": "90c99e64ad212fede038b25775e01af88dcbec9ae21b57447da6d81d2a37a351"
   },
-  "_label_policy": "Positive fixture with a real rumor->confirmed arc: Bloomberg reported the plan 2026-07-01 (all coverage hedged: 'reportedly', 'plans to', 'developing') -> rumored; 'Meta Launches Meta Compute' stated as fact 2026-07-04 -> confirmed. rumored = hedged report/prediction of the move, incl. reaction stories whose text reports it. confirmed = launch/entry stated as accomplished fact. irrelevant = market wraps and other-company pieces without a direct report of the move. Review rows: 8badf33ab679 (headline says 'Launch' on 07-02, body is valuation talk -> drafted rumored), 30848c0b28c5/bb566fed6388 (roundup/CRWV pieces -> drafted irrelevant). Drafted by Claude 2026-07-05 — Amelia to review."
+  "_label_policy": "Positive fixture with a real rumor->confirmed arc: Bloomberg reported the plan 2026-07-01 (hedged coverage) -> rumored; 'Meta Launches Meta Compute' stated as fact 2026-07-04 -> confirmed. rumored = hedged report/prediction of the move, incl. reaction stories whose text reports it. confirmed = launch/entry stated as accomplished fact. irrelevant = market wraps, other-company pieces, and articles that only name-drop the event in a headline while being about something else. Flagged rows REVIEWED by Amelia 2026-07-05: 8badf33ab679 -> irrelevant (valuation piece, headline name-drop only); 30848c0b28c5 -> relevant/rumored (roundup, but its text reports the rumor); bb566fed6388 -> irrelevant (confirmed as drafted). Remaining rows drafted by Claude."
 }

@@ -75,6 +75,14 @@ def run_fixture(event: str, *, dry_run: bool = False) -> dict | None:
     print(f"\n=== {event}: {len(articles)} articles, {len(doc['catalysts'])} catalyst(s), "
           f"{len(labels)} labeled pairs ({n_relevant} relevant) ===")
 
+    if n_relevant == 0:
+        # A fixture fresh out of backfill looks exactly like this: skeleton rows
+        # only, answer key not written. Scoring against it would burn API money
+        # to produce meaningless metrics — refuse rather than mislead.
+        print("  0 relevant labels = this fixture is UNLABELED (backfill only writes "
+              "skeleton rows).\n  Hand-label labels.json first — see eval/fixtures/README.md.")
+        return None
+
     if dry_run:
         print("  dry run — labels valid; a live run would make "
               f"~{_pass1_calls(len(articles))} Pass-1 calls and roughly {n_relevant}+ Pass-2 calls")

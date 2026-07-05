@@ -16,6 +16,25 @@ Fetches day-by-day (Finnhub truncates wide windows at ~250 items), writes
 `articles.json` (frozen — don't hand-edit) and a `labels.json` skeleton.
 Re-running never overwrites hand labels; it only appends rows for new pairs.
 
+**A raw window is often hundreds of articles, mostly noise.** Curate it with
+`--keep-match` — keep only articles whose text contains one of the given terms,
+plus a stride-sample of the rest as labeled negatives:
+
+```bash
+python -m eval.backfill --event orcl_2026-06-22_layoffs --ticker ORCL \
+    --start 2026-06-20 --end 2026-07-05 \
+    --catalyst "orcl_layoff:Oracle discloses cutting ~21,000 jobs in FY2026" \
+    --keep-match layoff "job cut" "21,000" workforce fired "laid off" \
+    --sample-irrelevant 15
+```
+
+Use **specific** terms (`"21,000"`, `layoff`) — not the company name, or
+everything matches. Curation only decides which articles enter the fixture; it
+does **not** label them. Matched rows still start `relevant: false` and carry a
+`_curation: "keyword-match"` hint marking them as worth your attention; sampled
+negatives get `_curation: "sample"`. You still write every label yourself
+(step 2) — the keyword filter is a triage aid, never the answer key.
+
 ## 2. Hand-label `labels.json`
 
 Every row is one (article, catalyst) pair. Edit two fields:

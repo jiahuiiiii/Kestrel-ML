@@ -9,6 +9,7 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 
 from eval import fixture_io
+from eval.backfill import build_or_update_labels, curate
 from eval.replay import (
     build_report,
     replay_timeline,
@@ -214,6 +215,68 @@ def test_validate_catches_label_mistakes():
     }
     problems = [p for p in fixture_io.validate([A1], bad_doc) if not p.startswith("note:")]
     assert len(problems) == 4
+
+
+# --- unlabeled-fixture guard ---------------------------------------------------- #
+def test_live_replay_refuses_unlabeled_fixture(tmp_path, monkeypatch, capsys):
+    from eval import replay
+    monkeypatch.setattr(fixture_io, "FIXTURES_DIR", tmp_path)
+    fixture_io.save_articles("blank", [A1])
+    fixture_io.save_labels("blank", {
+        "event": "blank", "ticker": "NVDA", "catalysts": CATALYSTS,
+        "labels": [label(A1)],   # skeleton: relevant=false
+        "expected_final": {"beat": "unconfirmed"},
+        "expected_confirm_article": {"beat": None},
+    })
+    assert replay.run_fixture("blank") is None          # refused, no API call attempted
+    assert "UNLABELED" in capsys.readouterr().out
+
+
+# --- curation (backfill) ------------------------------------------------------- #
+def kw_art(n, headline, summary=""):
+    return make_article(ticker="ORCL", headline=headline, summary=summary,
+                        url=f"https://example.com/kw{n}",
+                        published_at=datetime(2026, 6, 22, n % 24, tzinfo=timezone.utc),
+                        source="finnhub")
+
+
+def test_curate_keeps_matches_and_samples_negatives():
+    arts = [kw_art(0, "Oracle cuts 21,000 jobs"),           # match (headline)
+            kw_art(1, "Markets update", "amid layoff news"),  # match (summary)
+            kw_art(2, "SpaceX falls"),                       # negative
+            kw_art(3, "Nuclear loan program"),               # negative
+            kw_art(4, "Weather today")]                      # negative
+    kept, hint = curate(arts, ["21,000", "layoff"], sample_n=1)
+    kinds = sorted(hint[a.id] for a in kept)
+    assert kinds.count("keyword-match") == 2
+    assert kinds.count("sample") == 1
+    assert len(kept) == 3
+
+
+def test_curate_is_case_insensitive_and_deterministic():
+    arts = [kw_art(n, f"story {n}", "Big LAYOFF wave") for n in range(3)]
+    kept1, _ = curate(arts, ["layoff"], sample_n=0)
+    kept2, _ = curate(arts, ["layoff"], sample_n=0)
+    assert [a.id for a in kept1] == [a.id for a in kept2] == [a.id for a in arts]
+
+
+def test_curate_sample_zero_keeps_only_matches():
+    arts = [kw_art(0, "Oracle layoff"), kw_art(1, "unrelated"), kw_art(2, "also unrelated")]
+    kept, hint = curate(arts, ["layoff"], sample_n=0)
+    assert len(kept) == 1 and all(v == "keyword-match" for v in hint.values())
+
+
+def test_curation_hint_lands_in_skeleton_rows():
+    a_match, a_neg = kw_art(0, "Oracle layoff"), kw_art(1, "SpaceX")
+    _, hint = curate([a_match, a_neg], ["layoff"], sample_n=1)
+    doc, added = build_or_update_labels("evt", "ORCL", [a_match, a_neg],
+                                        [{"id": "orcl_layoff", "description": "layoffs"}], hint)
+    by_id = {r["article_id"]: r for r in doc["labels"]}
+    assert added == 2
+    assert by_id[a_match.id]["_curation"] == "keyword-match"
+    assert by_id[a_neg.id]["_curation"] == "sample"
+    # curation decides inclusion only — every row still starts unlabeled.
+    assert all(r["relevant"] is False for r in doc["labels"])
 
 
 def test_validate_clean_fixture_is_quiet():

@@ -1,6 +1,6 @@
 {
-  "event": "Oracle_fired_21,000_workers",
-  "ran_at": "2026-07-05T12:31:42.125813+00:00",
+  "event": "orcl_2026-06-22_layoffs",
+  "ran_at": "2026-07-05T13:55:56.707672+00:00",
   "n_articles": 46,
   "n_labeled_pairs": 46,
   "pass1": {
@@ -16,20 +16,45 @@
     "judged_pairs": 26,
     "confusion": {
       "no_change": {
-        "no_change": 3,
-        "confirmed": 2
+        "no_change": 1,
+        "rumored": 3,
+        "confirmed": 1
       },
       "confirmed": {
-        "confirmed": 20,
+        "confirmed": 17,
+        "rumored": 3
+      },
+      "rumored": {
         "rumored": 1
       }
     },
-    "confirmed_precision": 0.9091,
-    "confirmed_recall": 0.9524,
+    "confirmed_precision": 0.9444,
+    "confirmed_recall": 0.85,
     "quote_validity": 1.0,
     "mismatches": [
       {
-        "article_id": "d5fd509f33f6",
+        "article_id": "ea5f88af8327",
+        "catalyst_id": "orcl_layoff",
+        "expected": "confirmed",
+        "predicted": "rumored",
+        "guard_note": null
+      },
+      {
+        "article_id": "ef9c0cda30aa",
+        "catalyst_id": "orcl_layoff",
+        "expected": "confirmed",
+        "predicted": "rumored",
+        "guard_note": null
+      },
+      {
+        "article_id": "72ced60641e5",
+        "catalyst_id": "orcl_layoff",
+        "expected": "no_change",
+        "predicted": "rumored",
+        "guard_note": null
+      },
+      {
+        "article_id": "f4fb9260e06a",
         "catalyst_id": "orcl_layoff",
         "expected": "confirmed",
         "predicted": "rumored",
@@ -39,7 +64,14 @@
         "article_id": "1791dc5a6604",
         "catalyst_id": "orcl_layoff",
         "expected": "no_change",
-        "predicted": "confirmed",
+        "predicted": "rumored",
+        "guard_note": null
+      },
+      {
+        "article_id": "a6706e08cea5",
+        "catalyst_id": "orcl_layoff",
+        "expected": "no_change",
+        "predicted": "rumored",
         "guard_note": null
       },
       {
@@ -77,10 +109,10 @@
   },
   "prompt_versions": {
     "pass1_relevance": "4eaaf5969c8b",
-    "pass2_confirmation": "7cd4adde41da"
+    "pass2_confirmation": "00547d0c0f15"
   },
   "models": {
-    "pass1": "claude-haiku-4-5",
-    "pass2": "claude-sonnet-5"
+    "pass1": "gpt-5.4-mini",
+    "pass2": "gpt-5.4"
   }
 }

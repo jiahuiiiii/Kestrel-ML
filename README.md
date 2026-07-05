@@ -31,7 +31,7 @@ tests/            deterministic unit tests (no network, no API key)
 Requires **Python 3.11+**. Two API keys, both free-tier-friendly.
 
 ```bash
-git clone https://github.com/<owner>/Kestrel-ML.git   # substitute the repo owner
+git clone https://github.com/jiahuiiiii/Kestrel-ML.git
 cd Kestrel-ML
 python -m venv .venv && source .venv/bin/activate
 python -m pip install -r requirements.txt
@@ -96,11 +96,11 @@ To build a **new** fixture for an event you know the ground truth of, see
 
 Current fixtures, all passing end-to-end:
 
-| Fixture | Event | Tests |
-|---|---|---|
-| `nvda_2026-05-20_earnings` | NVDA Q1 FY27 earnings beat | straight-to-confirmed |
-| `orcl_2026-06-22_layoffs` | Oracle ~21k layoffs via annual filing | filing → reporting wave |
-| `meta_2026-07_meta_compute` | Meta Compute cloud launch | full rumored → confirmed arc |
+| Fixture                     | Event                                 | Tests                        |
+| --------------------------- | ------------------------------------- | ---------------------------- |
+| `nvda_2026-05-20_earnings`  | NVDA Q1 FY27 earnings beat            | straight-to-confirmed        |
+| `orcl_2026-06-22_layoffs`   | Oracle ~21k layoffs via annual filing | filing → reporting wave      |
+| `meta_2026-07_meta_compute` | Meta Compute cloud launch             | full rumored → confirmed arc |
 
 ## Integration contract
 
@@ -131,6 +131,7 @@ result = evaluator.evaluate(thesis, quant_results, catalyst_states)     # -> dic
 ### Shapes to persist
 
 **`news.Article`** (frozen dataclass):
+
 ```python
 id: str            # sha256(url) — your news_seen dedup key
 ticker: str
@@ -143,6 +144,7 @@ published_at: datetime  # tz-aware UTC
 
 **`llm.CatalystVerdict`** — `.model_dump()` into `catalysts.evidence` / `evaluations.catalyst_results`,
 and push over WS to the frontend reasoning panel:
+
 ```python
 catalyst_id: str
 proposed_state: "no_change" | "rumored" | "confirmed" | "invalidated"
@@ -157,6 +159,7 @@ guard_note: str | None            # set when a guard rewrote the verdict
 ```
 
 **`evaluator.evaluate(...)` output**:
+
 ```python
 {
   "ticker": str,
@@ -183,6 +186,7 @@ Enforced in **code**, after the model call — not just in the prompt (`pipeline
 ### Schema asks for `V1__init.sql`
 
 Raise before it's locked (details in [`ml_plan.md §3, §7`](ml_plan.md)):
+
 - `catalysts.state` enum (`unconfirmed`/`rumored`/`confirmed`/`invalidated`) + `evidence` JSON
   (there is **no** `state_updated_at` column by agreement — read it off the newest evidence entry's
   `classified_at`).
@@ -248,7 +252,7 @@ verdicts so it doesn't block on the backend.
 
 ### 5. Possible v2 directions
 
-- **Catalyst proposals.** Reuse the same news stream to *suggest* catalysts a thesis isn't
+- **Catalyst proposals.** Reuse the same news stream to _suggest_ catalysts a thesis isn't
   watching yet (add / remove / update), gated by human approval. This is a distinct
   classification task with its own prompt, output schema, and eval — not a flag on Pass 2.
   Share the news fetch, not the pass.

@@ -1,0 +1,452 @@
+[
+  {
+    "id": "dba34d4a8d03dda37fb94de1e9d47c30f31915e5f1ba15875e07ca97cd911250",
+    "ticker": "NVDA",
+    "headline": "Why IonQ Stock Surged This Week",
+    "summary": "Quantum computing stocks have been hot recently.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=3ea914743b42ad8d2985ffc44a1b632d0bee8b8ef69c51f96e5b5838366ed388",
+    "published_at": "2026-05-18T00:02:09+00:00"
+  },
+  {
+    "id": "0b6cb213a368749841338833b1149191538b13a0af13f0c6a182fb61b7667601",
+    "ticker": "NVDA",
+    "headline": "Nvidia's Upcoming Results And ETFs With Skin In The Game",
+    "summary": "Nvidia&#39;s earnings report on Wednesday could trigger moves across technology, semiconductor and AI-focused ETFs due to the chipmaker&#39;s dominant weight in major funds",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=1b9fa0e0a0e4324398cf05964f8bd3a9faf0337e0f3847918a700d90ba77b3aa",
+    "published_at": "2026-05-18T04:13:58+00:00"
+  },
+  {
+    "id": "548f3ec117afbff6f42802a4b685764cdb7ebf572941d5f0f49b48b33b2289e6",
+    "ticker": "NVDA",
+    "headline": "Dan Ives Calls Jensen Huang 'Godfather Of AI' Ahead Of NVDA Earnings, Says Nvidia Has 'Best Perch' To Gauge AI Demand",
+    "summary": "Dan Ives called Nvidia the &#34;Foundation for the AI revolution&#34; ahead of its earnings report, as investors watch closely.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=8848fee999be893e47c7c8ecb60207c492800342d1f42a7dc87b7ebe3f0b8caf",
+    "published_at": "2026-05-18T06:16:41+00:00"
+  },
+  {
+    "id": "f55e191726a71ac3a816007f47577e88d48d6accab6a5bf8a2a7f2c928ca71b3",
+    "ticker": "NVDA",
+    "headline": "This Analyst Is 'Wholeheartedly' Buying NVIDIA Into Earnings",
+    "summary": "NVDA earnings preview: Analysts predict a &#34;beat-and-raise&#34; quarter on May 20. See Wall Street&#39;s updated price targets for NVIDIA.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=2b1bd09646a08f27e5a2ed18b1caae2632f08353b60db75d0d3a42f146e6f191",
+    "published_at": "2026-05-18T06:52:02+00:00"
+  },
+  {
+    "id": "16131ac68a8bed7cb8829699bd25bc3d89cc12e2a107513004df6d0ebe14b5c4",
+    "ticker": "NVDA",
+    "headline": "Nvidia Is Still 'Cheapest Name' In Tech, Says Market Strategist: Q1 Earnings Will Make Your 'Jaw Drop'",
+    "summary": "CJ Muse calls Nvidia tech&#39;s &#34;cheapest name&#34; ahead of Q1 earnings, while experts predict a &#34;jaw drop&#34; financial blowout. Read the forecast.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=9ebd1997c028f3b9c6a5e8abf6969dd0c86b5d2723c87d2a73a71e573fde5427",
+    "published_at": "2026-05-18T08:00:58+00:00"
+  },
+  {
+    "id": "a9b4dcb7040809b8b39e9454380d17b5b41ef780c161d54c457de8a2cfec38e0",
+    "ticker": "NVDA",
+    "headline": "DA Davidson Maintains Buy on NVIDIA, Raises Price Target to $300",
+    "summary": "DA Davidson analyst Gil Luria maintains NVIDIA (NASDAQ:NVDA) with a Buy and raises the price target from $250 to $300.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=1d1658961493c30aed9a631f67d17a31929c74f8828c9a83e7b04390c1d6ee4d",
+    "published_at": "2026-05-18T11:19:55+00:00"
+  },
+  {
+    "id": "fa6de41b154844507feb765bba5458c75fe948a8ae127dfb7889aad2b56f6a41",
+    "ticker": "NVDA",
+    "headline": "Here's Why Ryanair Stock Flew Higher Today",
+    "summary": "Rising jet fuel prices are creating uncertainty in the airline industry, but this airline is better positioned than most to address them.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=042ae275fbba446a184da7fe8252a199b3ae59d36764b2222e0d094b30b6510e",
+    "published_at": "2026-05-18T17:34:15+00:00"
+  },
+  {
+    "id": "f0cb2fef89900011a6ec3baaa52d139c3afe5b80ad817ba3d820e5145569ed6a",
+    "ticker": "NVDA",
+    "headline": "Forget Nvidia. 1 of These 3 Hyperscalers Could Be the Top AI Stock Through 2030.",
+    "summary": "Combined 2026 capital spending from three cloud giants is set to top $570 billion, and they could be a smarter way to play artificial intelligence over the long haul.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=51be5e3e228a95ca415adeaa955d82febf04e48bd6c43e2dc7caf12e170b131a",
+    "published_at": "2026-05-19T06:01:00+00:00"
+  },
+  {
+    "id": "f3053094c153adac43252e2963d924fb61b7a9af22e787e6144ba2e0ad7586c5",
+    "ticker": "NVDA",
+    "headline": "Q1 Earnings Wrap-Up: Retailers And Nvidia Close Out A Season Marked By Robust Growth",
+    "summary": "Earnings slow down from this point forward, with only 611 global companies releasing results for Q1 this week. All eyes will be on the retail earnings and Nvidia's results. Read more here...",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=03bc4c538808e210dbeb688bb97a8509a34189595ab90ceb8cd24c79d0e8a094",
+    "published_at": "2026-05-19T06:05:00+00:00"
+  },
+  {
+    "id": "8a5613db406ee0555284466b5ede1691e64959318c577238949133255a3dc690",
+    "ticker": "NVDA",
+    "headline": "Markets Falling After Tech Selloff. Nvidia Earnings in Focus.",
+    "summary": "Markets were on course to open in the red Tuesday as the chip-stocks rally that has powered gains for much of the year continued to lose steam. Stock futures tied to the tech-heavy Nasdaq were down 0.3%, having finished 1.5% lower the previous session led lower by a Big Tech selloff. Dow Industrial futures were falling 34 points, or 0.1%, while S&P 500 futures dropped 0.2%.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=aa284656d19f60d67e6aaa226f9d88c14eb427fa0c2d981a752fbff53af96c3b",
+    "published_at": "2026-05-19T07:45:49+00:00"
+  },
+  {
+    "id": "f15df6ffa71692ac2b5269195102b911b2ed3bad1bd13874a9a1e9bdb1d192ec",
+    "ticker": "NVDA",
+    "headline": "EXCLUSIVE: Nvidia Earnings May Matter Less Than What Jensen Huang Says Next, Warns Direxion",
+    "summary": "Direxion&#39;s Mo Sparks says Nvidia investors may focus more on Jensen Huang&#39;s commentary and AI outlook than quarterly earnings numbers.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=f1a2756be2b8ff8d0fb987839ef87c8c9f0ba91160f39a506a876683ba529306",
+    "published_at": "2026-05-19T08:22:46+00:00"
+  },
+  {
+    "id": "e049949db0f4a9c0bc393b6a5bfc1cdcb8f1e580888e120217ea3799895573a9",
+    "ticker": "NVDA",
+    "headline": "Markets Fall Further as Tech Selloff Rolls On. Nvidia Earnings in Focus.",
+    "summary": "Markets were on course to open in the red Tuesday as the chip-stocks rally that has powered gains for much of the year continued to lose steam. Stock futures tied to the tech-heavy Nasdaq were down 0.7%, having finished 0.5% lower the previous session led lower by a Big Tech selloff. Dow Industrial futures were falling 97 points, or 0.2%, while S&P 500 futures dropped 0.5%.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=9abaa471b8fceae6802868fd2b1195f3fcecb0e57b0efdb54a9c92d22dac0f9b",
+    "published_at": "2026-05-19T11:31:30+00:00"
+  },
+  {
+    "id": "e5c361305a84acf3e532f065e4e563763064396ab7c89984ebf6b28ff3a6684b",
+    "ticker": "NVDA",
+    "headline": "EXCLUSIVE: From Nvidia Earnings To Fed Decisions, Kalshi Sees Prediction Markets Going Mainstream",
+    "summary": "Kalshi says prediction markets are evolving into mainstream Wall Street: spanning Nvidia earnings, Fed decisions, AI regulation etc.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=6bd7fef74284e0f840ae2f7fae39301f643c51f67dc2dac5bbee125ebdbf3a27",
+    "published_at": "2026-05-19T11:40:38+00:00"
+  },
+  {
+    "id": "34ba5dfc39ac48440f735bb03bcc5e63f3df1f09b51265247825cd394520fbb1",
+    "ticker": "NVDA",
+    "headline": "Nasdaq 100 Falls 1% As 30-Year Yields Spike To 19-Year Highs: Stock Market Today",
+    "summary": "U.S. stocks slip Tuesday as the 30-year yield surged to an 19-year high near 5.2% and chipmakers tumbled, while oil held above $103 on the Iran impasse.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=b37e3876aef59ec8838f376a59b2537cfb7b89d06668e653f44e1a2f2e473293",
+    "published_at": "2026-05-19T14:08:24+00:00"
+  },
+  {
+    "id": "0d5eb61965fcdcf9e831917e0e8e0921b95a9ab808c43dd86d0624b8c3fa4c75",
+    "ticker": "NVDA",
+    "headline": "Amer Sports, Inc. Q1 2026 Earnings Call Summary",
+    "summary": "Moby summary of Amer Sports, Inc.'s Q1 2026 earnings call",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=5b6722dee4925501bc89fe5239aea17e41a7b1a303f36f0e4f67ee0a2fa96c11",
+    "published_at": "2026-05-19T20:45:41+00:00"
+  },
+  {
+    "id": "e2df77fd94f400e12de4a88998c8a0d49ae347cc7bbdb428bdb2c4a3a266daed",
+    "ticker": "NVDA",
+    "headline": "Dow Jones Futures Fall With Nvidia Earnings Due; Micron, Sandisk, Astera Rise",
+    "summary": "The stock market fell Tuesday as yields hit new highs, but some AI leaders like Micron and Sandisk rebounded. Nvidia earnings loom.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=128c6e29d519b92162648174591031eb91739e5b38ae37abf9a48c00716b8168",
+    "published_at": "2026-05-20T03:06:12+00:00"
+  },
+  {
+    "id": "e65006d42e6da45b8b1759a665a31eb3c221618b20c1ebe37054506a993e71cc",
+    "ticker": "NVDA",
+    "headline": "Should You Buy Nvidia Stock Before Its Next Earnings Report?",
+    "summary": "Stop fretting over this stock's near-term fluctuations.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=acb821d9c2f419ccb467da776947b89603aa4ee1d94b8df8d75bc91a37bf9fed",
+    "published_at": "2026-05-20T04:11:54+00:00"
+  },
+  {
+    "id": "b7d0595aea9d50e6d001ef8f1fb587751f7e2eca060ecd780a6f057e3893c66d",
+    "ticker": "NVDA",
+    "headline": "Nvidia Technical: Potential Mean Reversion Decline Below 236.54 As Earnings Loom",
+    "summary": "NVIDIA (NVDA) remains a critical bellwether for the global AI capex cycle, with earnings today expected to determine whether hyperscaler demand continues to accelerate or begins to plateau.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=d06a8c239ad9ac587aec87d04994210216978845164ecba21153d6f6df08349d",
+    "published_at": "2026-05-20T05:06:00+00:00"
+  },
+  {
+    "id": "d68817ef8e73a945d75a4da260ee852f6824aa2faee20bcf0656c01f89e865ec",
+    "ticker": "NVDA",
+    "headline": "Nvidia's Earnings Are Hours Away. Here Are 3 Things to Watch.",
+    "summary": "The AI chipmaker's outlook for the quarter ahead, its Vera Rubin transition, and any fresh China commentary could matter more than the headline numbers.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=d584a819926f639a4bd33b1c497595d4fd585ea4b114c72a72e5a9a82ee8296c",
+    "published_at": "2026-05-20T05:46:00+00:00"
+  },
+  {
+    "id": "913b87dde8d79b88b22428907d1ff2d16db16d9ed33357c2dc5c604dfdefd913",
+    "ticker": "NVDA",
+    "headline": "Nvidia Earnings Likely to Shine Even as Stock Underperforms",
+    "summary": "Artificial-intelligence leader Nvidia has a big task when it reports first-quarter earnings later today: convince investors that the AI investment boom still has legs and that Nvidia won’t lose its pole position. Wall Street analysts expect the company to report earnings per share of $1.75, up from 81 cents a year ago. Nvidia remains the biggest winner of the AI age.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=42cc7c135fa6682190a53f375510af98c4874b35caf11152216eb0297f8aa0dc",
+    "published_at": "2026-05-20T05:58:34+00:00"
+  },
+  {
+    "id": "516902ff735f081633ec587bbc6bc49246af370134d347f413cb545da85152c8",
+    "ticker": "NVDA",
+    "headline": "Nvidia Earnings No Longer About Beating Estimates, But About Whether Jensen Huang Can Prove AI Supercycle Still Has Years Left: Top Analyst",
+    "summary": "Nvidia Corp (NASDAQ:NVDA) is scheduled to report its first-quarter earnings on Wednesday. A top analyst said that investors are increasingly focused not on whether the chipmaker beats expectations, but whether CEO Jensen Huang can convince Wall Street that the AI infrastructure boom still has years of growth ahead. AI Supercycle Faces Its Biggest Test Yet In a statement to Benzinga, Daniel Newman, CEO of The Futurum Group, said Nvidia's upcoming earnings report is \"the most consequential print o",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=c29b270b0d9312abccf2505fde81fac175bac8c84caf4bcaf1a7d32eae7b60f3",
+    "published_at": "2026-05-20T06:31:25+00:00"
+  },
+  {
+    "id": "3530d72958713af9c225efde809548a37ce4e9c6cdf2e2012743b2f4ac30356f",
+    "ticker": "NVDA",
+    "headline": "Global Materials Informatics Market 2026-2036: Microsoft, Google DeepMind, Meta FAIR, IBM Research, and NVIDIA Have Entered the Field As Direct Competitors and Infrastructure Providers",
+    "summary": "The Global Materials Informatics Market 2026-2036 report highlights transformative opportunities in industrial R&D driven by AI advancements. As major tech players like Microsoft and Google enter the market, competition intensifies, reshaping the industry landscape. With AI-driven sustainability applications gaining traction, the report forecasts significant growth opportunities, marking an inflection point in materials informatics.Dublin, May 20, 2026 (GLOBE NEWSWIRE) -- The \"The Global Materia",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=ad37f56ec394db8300d832d6311a1b388f6e5d40fc9891e1ecb2e7c9685938f2",
+    "published_at": "2026-05-20T09:36:00+00:00"
+  },
+  {
+    "id": "069e2e622ae664d658c259b1534275411d6d2e0b5cbad07d071a7135f5bd7c20",
+    "ticker": "NVDA",
+    "headline": "Lam Research and KLA Corporation Stocks Trade Down, What You Need To Know",
+    "summary": "A number of stocks fell in the afternoon session after a broad-based sell-off hit the semiconductor sector following news of a potential strike at Samsung and a stake sale by Taiwan Semiconductor Manufacturing (TSMC), which rattled global chip supply chains.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=b5bf7b22918586de427f4b066d276da31a91c0ab748181078ad7156ee0223c59",
+    "published_at": "2026-05-20T17:08:55+00:00"
+  },
+  {
+    "id": "a8980c64d65f07d7b44104524275432ba7daf52d86cc31c5bb3a679c595d562a",
+    "ticker": "NVDA",
+    "headline": "NVIDIA Beats Estimates After Market Session Surges",
+    "summary": "NVIDIA's earnings grew +140% year over year, +85% on revenues. An $80B share repurchase was also announced.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=a4f13a47abe6e2ad9321a3a142201bc4dddd8c7d5b200a7a35adb0da7e3b340e",
+    "published_at": "2026-05-20T22:50:00+00:00"
+  },
+  {
+    "id": "f7ce4818c48cff027bfaa29ca0b75d816ed410986548010a7c01fb277de483b5",
+    "ticker": "NVDA",
+    "headline": "NVIDIA Q1 Earnings Call Highlights",
+    "summary": "NVIDIA (NASDAQ:NVDA) reported record first-quarter fiscal 2027 results, with revenue, operating income and free cash flow all surpassing prior company highs, as executives said demand for AI infrastructure continued to accelerate across hyperscale cloud providers, AI cloud companies, sovereign custo",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=8a72a7b848298e171dd1fec5fa348bbb37956ae91dddd97aa5ffaf4090b8823b",
+    "published_at": "2026-05-20T23:05:09+00:00"
+  },
+  {
+    "id": "7992f67b7a0a97edd7f0279a066e69ad22665572c95a336f1d1a72a0f1162f1a",
+    "ticker": "NVDA",
+    "headline": "NVIDIA Corporation (NVDA) Q1 2027 Earnings Call Transcript",
+    "summary": "NVIDIA Corporation (NVDA) Q1 2027 Earnings Call May 20, 2026 5:00 PM EDTCompany ParticipantsToshiya Hari - Vice President of Investor Relations &...",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=71c1d22965006a5b9d229dcce124957a9005d8030526f4e0b2f69934a0c1ca5c",
+    "published_at": "2026-05-20T23:20:42+00:00"
+  },
+  {
+    "id": "3198160434fb6c20f0698637e96e786a6d880ce928af5a73da4bef5104a03c33",
+    "ticker": "NVDA",
+    "headline": "Stock market today: Dow, S&P 500, Nasdaq futures slip as Wall Street shrugs off Nvidia earnings",
+    "summary": "US stock futures fell after Nvidia earnings failed to wow investors, and SpaceX took a big step toward its IPO.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=f3a84ad333eb6c117c56c5d9ec0c3531a554180fe41c49cf8c68ad9f3c61fb8d",
+    "published_at": "2026-05-20T23:23:11+00:00"
+  },
+  {
+    "id": "118149e7d3e33babe9b64e35af241e1280f9a1e62509413729b16ceaac2543d4",
+    "ticker": "NVDA",
+    "headline": "Asian shares surge after oil prices slip and Wall Street resumes its AI rally",
+    "summary": "Shares rallied Thursday across Asia, tracking gains on Wall Street after pressure from the bond market eased and oil prices fell back. The advance was also powered by a stronger-than-expected quarterly report from chipmaker Nvidia, whose profit rocketed more than 200% higher in the February-April quarter from a year earlier, while revenue jumped 85%. Nvidia has been one of the biggest beneficiaries from the boom in artificial intelligence, thanks to powerful demand for its high-end AI chips.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=33a101d7d9eb8f00417fce8aa8d2d105350294f0b3f9caa236641cad4d77c7e6",
+    "published_at": "2026-05-21T02:24:59+00:00"
+  },
+  {
+    "id": "c03f9b7a7a6f1a394762c835e6ca60896df1ef37957ab4cc3f4097ad04f489d7",
+    "ticker": "NVDA",
+    "headline": "Nvidia posts record quarter as AI demand surges, but muted guidance caps investor excitement",
+    "summary": "Nvidia Corp (NASDAQ:NVDA, XETRA:NVD) has delivered another blockbuster quarter, reporting record first-quarter revenue of US$81.6 billion, up 85% year-on-year, as demand for its artificial intelligence chips continued to dominate global data centre spending. Despite topping Wall Street...",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=362a6233c18e67383c0840bd7faa3211e2bbe184252eaebae3e01e82cdb6211b",
+    "published_at": "2026-05-21T04:17:00+00:00"
+  },
+  {
+    "id": "e018b6f6c5f3bf72bea2f25f9d44a1994f21ac700c0ab8ba7ddf89f60a8bc233",
+    "ticker": "NVDA",
+    "headline": "Is Nvidia a Buy After Their Latest Earnings Report?",
+    "summary": "Nvidia now sees sales growing an astounding 95% in the current quarter, and that's without any China sales.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=69c6ddbbf460695e7d80a8b3adfe10fea3bc5afce6199bcf6cf874c9179b0a89",
+    "published_at": "2026-05-21T04:20:00+00:00"
+  },
+  {
+    "id": "7d3573944d31009cce366bdaa900e84996ed045d44e1741231a038feee62e924",
+    "ticker": "NVDA",
+    "headline": "Nvidia bets on new data center chips as sales outlook tops estimates",
+    "summary": "STORY: Nvidia on Wednesday forecast second-quarter revenue above Wall Street expectations, and assured investors that new customers would let it maintain blockbuster rates of growth. The world's most valuable company expects sales of around $91 billion, compared with estimates of about $87 billion.For the first quarter, Nvidia reported revenue of $81.6 billion, also beating forecasts.However, its shares dropped over 1% in extended trading, in a sign that investors believe Nvidia will face tougher competition.That could come from U.S. rivals Intel and AMD, which are finding new demand for their chips in AI applications. Nvidia CEO Jensen Huang told analysts his firm would grow faster than so-called \"hyperscale\" customers like Alphabet and Amazon.He pointed to a new segment of smaller customers in its data center business that includes AI-specific cloud firms.He added that the company's new \"Vera\" central processors give it access to a $200 billion market.Huang said Nvidia expects $20 billion in revenue from the new silicon by the end of this fiscal year, in addition to the $1 trillion for existing Blackwell and Rubin chips by 2027.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=284308564db07f32c854166ad3f5ea37e23fb49a9c71c9c8a971ab4db5b0fbc8",
+    "published_at": "2026-05-21T04:44:42+00:00"
+  },
+  {
+    "id": "7a71d74111321392c6cc140001b0e0342c3bac0490c560fea3a9ed72db33716b",
+    "ticker": "NVDA",
+    "headline": "NVIDIA Corp (NVDA) Q1 2027 Earnings Call Highlights: Record Revenue and Strategic Expansion",
+    "summary": "NVIDIA Corp (NVDA) reports an impressive 85% year-over-year revenue growth, driven by data center demand and strategic market expansions.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=2dedb4aa9efb02b8923121457f4f1d43f2062e68a6bb8515a01f18631e1a81dd",
+    "published_at": "2026-05-21T05:00:40+00:00"
+  },
+  {
+    "id": "3fff2c2029bd918751f56480ffd528ddbc2798ea38256c9c86d79c0b2175d9fd",
+    "ticker": "NVDA",
+    "headline": "Nvidia beats expectations again as AI boom drives revenue surge, but shares slip",
+    "summary": "The world's most valuable company beat forecasts as revenues jumped 85%. Yet rising competition and efforts to diversify beyond big tech left investors cautious, sending shares lower in late trading.View on euronews",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=925393ea848a8a214ba492748c362f5c49cb6bac3b5e569738e7fbd078b2b969",
+    "published_at": "2026-05-21T06:50:27+00:00"
+  },
+  {
+    "id": "c49a7d78af924e8e563af0d3e3079afab4835da6c04641216c530da447c085b4",
+    "ticker": "NVDA",
+    "headline": "What NVIDIA (NVDA)'s Record Q1 Payouts and US$80 Billion Buyback Mean For Shareholders",
+    "summary": "NVIDIA reported past first-quarter results for the period ended April 26, 2026, with revenue of US$81.62 billion and net income of US$58.32 billion, and announced a sharply higher dividend plus an US$80 billion share repurchase authorization. Despite this very large profit and cash generation, early market reaction was muted as investors weighed the sustainability of AI infrastructure demand and the impact of NVIDIA’s new reporting structure. We’ll now examine how these record earnings and...",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=c8e56c7d56caa960c6c20ee9ebd20661c0e17e5f7506652aed3b5095cf5287c8",
+    "published_at": "2026-05-21T07:11:43+00:00"
+  },
+  {
+    "id": "9cb1ca9308173afb9ae755afeaf18c907fa9d548f83d6baf55731b7f44ac6027",
+    "ticker": "NVDA",
+    "headline": "NVDA Q1 Earnings Call Flags a Wider AI Infrastructure Push",
+    "summary": "NVDA's Q1 call spotlights AI demand spreading beyond hyperscalers, with a new reporting structure, bigger CPU ambitions, and aggressive supply commitments.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=ec6f5e270d296c970eb224f0ac780ee1f9ed2e7fdc48e37027aae54c45051ae5",
+    "published_at": "2026-05-21T08:15:00+00:00"
+  },
+  {
+    "id": "46955909c942efe0432915c6333e070c57e35e7266aa0a8592735f6d0b9d3bef",
+    "ticker": "NVDA",
+    "headline": "Nvidia Lost Half Its China Business — Then Revenue Nearly Doubled",
+    "summary": "Nvidia&#39;s China revenue fell 53% to $4.55B, but total sales jumped 85% to $81.6B as U.S. AI demand surged. Here&#39;s what the filing reveals.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=658df770e975da7e84f9f24780d3b46b3bea8d0e764fdd3cc0ca27092f3886c2",
+    "published_at": "2026-05-21T08:18:04+00:00"
+  },
+  {
+    "id": "74fa81849a1b6d83fc89fb9ec9d343e3cc200d8488a9d9c0b41c6a1695042df9",
+    "ticker": "NVDA",
+    "headline": "Nvidia Q1 Earnings: Growth Slowdown, Massive Agentic AI Positioning",
+    "summary": "Nvidia (NVDA) delivered strong Q1 FY2027 results, beating revenue and EPS expectations, but the stock showed no post-earnings upside.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=bafbde021eaf16dd0be2a1e03fd0365d4cab01d01cd1d97fcae41587c26ef8d7",
+    "published_at": "2026-05-21T08:30:41+00:00"
+  },
+  {
+    "id": "9c00a9a62a775458c043c4aa62f74be30aef584213bc13fcf88459f6b59995c6",
+    "ticker": "NVDA",
+    "headline": "Stock Market Today: Dow, S&P 500, Nasdaq Futures Fall After NVDA's Q1 Results— Nebius Group, Intuit In Focus (UPDATED)",
+    "summary": "(Editor’s note: The future prices of benchmark tracking ETFs, the economic data, the lede and the headline were updated in the story.)",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=68fc8dfd6519c4ed72fff2224115d8425f67cbf5f0cf4a67e7aac5a25db58a52",
+    "published_at": "2026-05-21T08:52:55+00:00"
+  },
+  {
+    "id": "7f74d0ec2dfcfea9aad1f47984fe99c9de88001c77d2be75dca0502ab7669121",
+    "ticker": "NVDA",
+    "headline": "Nvidia Q1 FY27 net income surges 211% to $58.3bn",
+    "summary": "The chipmaker’s revenue rose 85% to $81.6bn as strong growth was driven by hyperscalers, AI Clouds, enterprises, and sovereign customers.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=1d84880722048ed63ab87963f654d265642d63630d0e87ea86a8d9496f6a29e6",
+    "published_at": "2026-05-21T09:21:34+00:00"
+  },
+  {
+    "id": "21ac48e1155f18e1ee521ddda5a3f5efad061ba9159ab73449b387507fcdedb7",
+    "ticker": "NVDA",
+    "headline": "Stock Futures Rise After Nvidia Earnings",
+    "summary": "Stocks were on track to rise Thursday as investors digested strong results from artificial intelligence chip maker Nvidia and hoped for progress in the peace talks between the U.S. and Iran. The three major indexes snapped a three-session losing streak on Wednesday after President Donald Trump said the U.S. was in the final stage of negotiations with Iran to end the war in the Middle East. Moves early Thursday suggest that the market has concluded that Nvidia’s first-quarter earnings were good, but not good enough to keep the AI rally going.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=4a1858ac9fdc44a05dd4c2b95a85e13922bb660284afdd30d58f45924e84b00f",
+    "published_at": "2026-05-21T09:24:20+00:00"
+  },
+  {
+    "id": "765692716ac3ec561d0ab95754511d6c7a4a1858dc3341bfcaf1d5d4714195ea",
+    "ticker": "NVDA",
+    "headline": "Nvidia CEO says the company has 'largely conceded' China’s AI chip market to Huawei",
+    "summary": "Nvidia CEO Jensen Huang joins CNBC’s Sara Eisen to discuss the semiconductor giant’s latest earnings, deploying data centers into space, how he sees the Chinese market, and more.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=828d51d2ee8bd723eabd4c442e69ce77007c6c1fc3c9533aac42c2119e22b25c",
+    "published_at": "2026-05-21T11:26:32+00:00"
+  },
+  {
+    "id": "530e5b9f56d69adfefa1e45405b07f112f945f8e9af1701c49b1c48d39b022d0",
+    "ticker": "NVDA",
+    "headline": "AMD's $10 Billion Taiwan Push Puts AI Chip Race In Focus",
+    "summary": "AMD is expanding Taiwan partnerships and packaging capacity as AI infrastructure demand rises.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=2414418e95858c9d98da8426abcd94154f79837a948a3033c66f41cfb70b51b6",
+    "published_at": "2026-05-21T17:35:40+00:00"
+  },
+  {
+    "id": "6a232c60d6b10ca69002da1621c9b4190db876bfefd9a358f8bfc78936e8c83a",
+    "ticker": "NVDA",
+    "headline": "Nvidia Just Raised Its Dividend By 2,400% -- and That Wasn't Even the Biggest News From Its Earnings Report",
+    "summary": "The chipmaker's record quarter came with a historic capital return -- and the underlying business is moving even faster.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=fc70ddc242419455079746698d2bc4ed0944ac648146211e1e066479ddb3f9f1",
+    "published_at": "2026-05-22T01:31:00+00:00"
+  },
+  {
+    "id": "7676e5352f8464acd0ef611932202fd658e4049f9ba0972c4e540ca5894e89a4",
+    "ticker": "NVDA",
+    "headline": "Nvidia's $82bn quarter masks a company being rebuilt from within",
+    "summary": "Nvidia Corp (NASDAQ:NVDA, XETRA:NVD), the world's most valuable chipmaker, delivered quarterly revenue of $82 billion and free cash flow of $48.6 billion, yet the real story lies in the structural overhaul taking shape beneath the headline numbers. The company restructured its reporting into...",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=5c6af4ec1dac3af008000151d57cdf4bce88df5350d1fc436af1338b85760f14",
+    "published_at": "2026-05-22T06:56:00+00:00"
+  },
+  {
+    "id": "15abc7c4acfa6a1bfd4db3e7c3c72025d1e531c12acdce60fdac6a6944093fce",
+    "ticker": "NVDA",
+    "headline": "The Tech Download: What you might have missed in Nvidia’s earnings — a $200 billion opportunity and edge computing",
+    "summary": "While Jensen Huang said the chip giant had \"conceded\" the China market, Nvidia reported another blockbuster quarter on Wednesday.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=a41f13369884e88c5497480a83a171fae842fe21259ce580f5d627b61b545d5a",
+    "published_at": "2026-05-22T07:00:01+00:00"
+  },
+  {
+    "id": "594a29ba79cb6e4d464ffca9329014d7a498d886f73f86b49080a9b111b71cfc",
+    "ticker": "NVDA",
+    "headline": "This Artificial Intelligence (AI) Stock That Has Run Circles Around Nvidia in the Past Year Still Has 39% Upside, According to a Wall Street Analyst",
+    "summary": "Is it too late to jump on the bandwagon?",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=28240d5dab8c0ccd65359424531682c828571e670d1091bb4f74cde921b61e7e",
+    "published_at": "2026-05-22T08:05:00+00:00"
+  },
+  {
+    "id": "1e45c50b82e960ecc4e7ef2fe55f99a9f639cefc0cf35fa00fd1e8c398c77b10",
+    "ticker": "NVDA",
+    "headline": "Lenovo's AI Revenue Surge Exposes Nvidia's China Blind Spot",
+    "summary": "Lenovo&#39;s AI revenue surged 84% in Q4 as Nvidia loses all China market share. Here&#39;s what that means for investors watching the AI race.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=8fc27656a881a2ed4192623dbbc0a7ec4d7d4d7ebc6ce020cf0c32fd01e8cf7f",
+    "published_at": "2026-05-22T09:05:20+00:00"
+  },
+  {
+    "id": "5e54530dda990a6eedc23c24065255f3f73e5a67aaf19afc30c4b2e7c32fe14b",
+    "ticker": "NVDA",
+    "headline": "Nvidia AI Outlook Lifts Asian Chip Suppliers",
+    "summary": "Investors continued to bet on AI infrastructure growth despite recent market volatility.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=80d4b3ce9b0d30dedc9a8d6183d59b3d6d07cb709c8432db0e9ba28c6a5d13d6",
+    "published_at": "2026-05-22T10:30:12+00:00"
+  },
+  {
+    "id": "02d570bea743468475f0ccc70fe6c71b134d9738d22e4c69bc97f7137da6f713",
+    "ticker": "NVDA",
+    "headline": "Congressman Sold Nvidia Stock Before Record Earnings, Missing Out On Gains Again",
+    "summary": "A member of Congress has sold over $1 million in Nvidia stock since 2022, missing out on gains. This includes selling the stock multiple times in 2026 ahead of record highs.",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=279febe7d208c79c46d9bc0462ebc2d98d6ebeb84da235b31779d0457baf0f20",
+    "published_at": "2026-05-22T10:33:41+00:00"
+  },
+  {
+    "id": "18bb3901e70ac388046a990d036f43f85191a5f8b0a073d339a18dd4a9d1d656",
+    "ticker": "NVDA",
+    "headline": "EXCLUSIVE: SpaceX Frenzy Sends New ETF Past $1 Billion In Just Weeks — TEMA CEO Says Space Economy 'Still In Early Innings'",
+    "summary": "SpaceX IPO excitement took the NASA ETF past $1bn in AUM just 37 days after launch. CEO Maurits Pot says space economy is &#34;still in early innings.&#34;",
+    "source": "finnhub",
+    "url": "https://finnhub.io/api/news?id=79ba97bcd8928ab912b6be3268a913357a8c2997980075f21f4c2260c2ccd869",
+    "published_at": "2026-05-22T15:11:27+00:00"
+  }
+]

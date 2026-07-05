@@ -22,6 +22,7 @@ Contract (§7): classify_batch(articles, catalysts) -> list[CatalystVerdict]
 from __future__ import annotations
 
 import hashlib
+import html
 import logging
 from datetime import datetime, timezone
 from functools import lru_cache
@@ -206,7 +207,9 @@ def quote_in_article(quote: str, article: Article) -> bool:
 
 
 def _norm(text: str) -> str:
-    return " ".join(text.lower().split())
+    # html.unescape on BOTH sides keeps the check verbatim while tolerating
+    # entity-encoded article text (older fixtures predate ingestion unescaping).
+    return " ".join(html.unescape(text).lower().split())
 
 
 # --------------------------------------------------------------------------- #

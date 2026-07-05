@@ -55,6 +55,18 @@ def test_quote_can_come_from_headline():
     assert quote_in_article("Nvidia says the FDA has approved", a)
 
 
+def test_quote_matches_across_html_entities():
+    # Older fixture articles store Finnhub's raw entity-encoded text; the model
+    # quotes decoded text. Both sides are unescaped before comparison.
+    a = article(summary="Experts predict a &#34;jaw drop&#34; financial blowout &amp; more.")
+    assert quote_in_article('predict a "jaw drop" financial blowout & more', a)
+
+
+def test_make_article_unescapes_entities():
+    a = article(summary="Nvidia&#39;s earnings &amp; guidance")
+    assert a.summary == "Nvidia's earnings & guidance"
+
+
 # --- guard 1: verbatim quote required ---------------------------------------- #
 def test_valid_verdict_passes_through_unchanged():
     out = _apply_guards(verdict(), article())

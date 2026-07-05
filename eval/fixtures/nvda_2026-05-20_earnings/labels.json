@@ -1,0 +1,420 @@
+{
+  "event": "nvda_2026-05-20_earnings",
+  "ticker": "NVDA",
+  "catalysts": [
+    {
+      "id": "earnings_beat",
+      "description": "NVDA Q1 FY2027 (April quarter) results beat consensus revenue expectations"
+    }
+  ],
+  "labels": [
+    {
+      "article_id": "dba34d4a8d03dda37fb94de1e9d47c30f31915e5f1ba15875e07ca97cd911250",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Why IonQ Stock Surged This Week",
+      "_published_at": "2026-05-18T00:02:09+00:00"
+    },
+    {
+      "article_id": "0b6cb213a368749841338833b1149191538b13a0af13f0c6a182fb61b7667601",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Nvidia's Upcoming Results And ETFs With Skin In The Game",
+      "_published_at": "2026-05-18T04:13:58+00:00"
+    },
+    {
+      "article_id": "548f3ec117afbff6f42802a4b685764cdb7ebf572941d5f0f49b48b33b2289e6",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Dan Ives Calls Jensen Huang 'Godfather Of AI' Ahead Of NVDA Earnings, Says Nvidia Has 'Best Perch' To Gauge AI Demand",
+      "_published_at": "2026-05-18T06:16:41+00:00"
+    },
+    {
+      "article_id": "f55e191726a71ac3a816007f47577e88d48d6accab6a5bf8a2a7f2c928ca71b3",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "This Analyst Is 'Wholeheartedly' Buying NVIDIA Into Earnings",
+      "_published_at": "2026-05-18T06:52:02+00:00"
+    },
+    {
+      "article_id": "16131ac68a8bed7cb8829699bd25bc3d89cc12e2a107513004df6d0ebe14b5c4",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Nvidia Is Still 'Cheapest Name' In Tech, Says Market Strategist: Q1 Earnings Will Make Your 'Jaw Drop'",
+      "_published_at": "2026-05-18T08:00:58+00:00"
+    },
+    {
+      "article_id": "a9b4dcb7040809b8b39e9454380d17b5b41ef780c161d54c457de8a2cfec38e0",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "DA Davidson Maintains Buy on NVIDIA, Raises Price Target to $300",
+      "_published_at": "2026-05-18T11:19:55+00:00"
+    },
+    {
+      "article_id": "fa6de41b154844507feb765bba5458c75fe948a8ae127dfb7889aad2b56f6a41",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Here's Why Ryanair Stock Flew Higher Today",
+      "_published_at": "2026-05-18T17:34:15+00:00"
+    },
+    {
+      "article_id": "f0cb2fef89900011a6ec3baaa52d139c3afe5b80ad817ba3d820e5145569ed6a",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Forget Nvidia. 1 of These 3 Hyperscalers Could Be the Top AI Stock Through 2030.",
+      "_published_at": "2026-05-19T06:01:00+00:00"
+    },
+    {
+      "article_id": "f3053094c153adac43252e2963d924fb61b7a9af22e787e6144ba2e0ad7586c5",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Q1 Earnings Wrap-Up: Retailers And Nvidia Close Out A Season Marked By Robust Growth",
+      "_published_at": "2026-05-19T06:05:00+00:00"
+    },
+    {
+      "article_id": "8a5613db406ee0555284466b5ede1691e64959318c577238949133255a3dc690",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Markets Falling After Tech Selloff. Nvidia Earnings in Focus.",
+      "_published_at": "2026-05-19T07:45:49+00:00"
+    },
+    {
+      "article_id": "f15df6ffa71692ac2b5269195102b911b2ed3bad1bd13874a9a1e9bdb1d192ec",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "EXCLUSIVE: Nvidia Earnings May Matter Less Than What Jensen Huang Says Next, Warns Direxion",
+      "_published_at": "2026-05-19T08:22:46+00:00"
+    },
+    {
+      "article_id": "e049949db0f4a9c0bc393b6a5bfc1cdcb8f1e580888e120217ea3799895573a9",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Markets Fall Further as Tech Selloff Rolls On. Nvidia Earnings in Focus.",
+      "_published_at": "2026-05-19T11:31:30+00:00"
+    },
+    {
+      "article_id": "e5c361305a84acf3e532f065e4e563763064396ab7c89984ebf6b28ff3a6684b",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "EXCLUSIVE: From Nvidia Earnings To Fed Decisions, Kalshi Sees Prediction Markets Going Mainstream",
+      "_published_at": "2026-05-19T11:40:38+00:00"
+    },
+    {
+      "article_id": "34ba5dfc39ac48440f735bb03bcc5e63f3df1f09b51265247825cd394520fbb1",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Nasdaq 100 Falls 1% As 30-Year Yields Spike To 19-Year Highs: Stock Market Today",
+      "_published_at": "2026-05-19T14:08:24+00:00"
+    },
+    {
+      "article_id": "0d5eb61965fcdcf9e831917e0e8e0921b95a9ab808c43dd86d0624b8c3fa4c75",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Amer Sports, Inc. Q1 2026 Earnings Call Summary",
+      "_published_at": "2026-05-19T20:45:41+00:00"
+    },
+    {
+      "article_id": "e2df77fd94f400e12de4a88998c8a0d49ae347cc7bbdb428bdb2c4a3a266daed",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Dow Jones Futures Fall With Nvidia Earnings Due; Micron, Sandisk, Astera Rise",
+      "_published_at": "2026-05-20T03:06:12+00:00"
+    },
+    {
+      "article_id": "e65006d42e6da45b8b1759a665a31eb3c221618b20c1ebe37054506a993e71cc",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Should You Buy Nvidia Stock Before Its Next Earnings Report?",
+      "_published_at": "2026-05-20T04:11:54+00:00"
+    },
+    {
+      "article_id": "b7d0595aea9d50e6d001ef8f1fb587751f7e2eca060ecd780a6f057e3893c66d",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Nvidia Technical: Potential Mean Reversion Decline Below 236.54 As Earnings Loom",
+      "_published_at": "2026-05-20T05:06:00+00:00"
+    },
+    {
+      "article_id": "d68817ef8e73a945d75a4da260ee852f6824aa2faee20bcf0656c01f89e865ec",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Nvidia's Earnings Are Hours Away. Here Are 3 Things to Watch.",
+      "_published_at": "2026-05-20T05:46:00+00:00"
+    },
+    {
+      "article_id": "913b87dde8d79b88b22428907d1ff2d16db16d9ed33357c2dc5c604dfdefd913",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Nvidia Earnings Likely to Shine Even as Stock Underperforms",
+      "_published_at": "2026-05-20T05:58:34+00:00"
+    },
+    {
+      "article_id": "516902ff735f081633ec587bbc6bc49246af370134d347f413cb545da85152c8",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Nvidia Earnings No Longer About Beating Estimates, But About Whether Jensen Huang Can Prove AI Supercycle Still Has Year",
+      "_published_at": "2026-05-20T06:31:25+00:00"
+    },
+    {
+      "article_id": "3530d72958713af9c225efde809548a37ce4e9c6cdf2e2012743b2f4ac30356f",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Global Materials Informatics Market 2026-2036: Microsoft, Google DeepMind, Meta FAIR, IBM Research, and NVIDIA Have Ente",
+      "_published_at": "2026-05-20T09:36:00+00:00"
+    },
+    {
+      "article_id": "069e2e622ae664d658c259b1534275411d6d2e0b5cbad07d071a7135f5bd7c20",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Lam Research and KLA Corporation Stocks Trade Down, What You Need To Know",
+      "_published_at": "2026-05-20T17:08:55+00:00"
+    },
+    {
+      "article_id": "a8980c64d65f07d7b44104524275432ba7daf52d86cc31c5bb3a679c595d562a",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "NVIDIA Beats Estimates After Market Session Surges",
+      "_published_at": "2026-05-20T22:50:00+00:00"
+    },
+    {
+      "article_id": "f7ce4818c48cff027bfaa29ca0b75d816ed410986548010a7c01fb277de483b5",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "NVIDIA Q1 Earnings Call Highlights",
+      "_published_at": "2026-05-20T23:05:09+00:00"
+    },
+    {
+      "article_id": "7992f67b7a0a97edd7f0279a066e69ad22665572c95a336f1d1a72a0f1162f1a",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "NVIDIA Corporation (NVDA) Q1 2027 Earnings Call Transcript",
+      "_published_at": "2026-05-20T23:20:42+00:00"
+    },
+    {
+      "article_id": "3198160434fb6c20f0698637e96e786a6d880ce928af5a73da4bef5104a03c33",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Stock market today: Dow, S&P 500, Nasdaq futures slip as Wall Street shrugs off Nvidia earnings",
+      "_published_at": "2026-05-20T23:23:11+00:00"
+    },
+    {
+      "article_id": "118149e7d3e33babe9b64e35af241e1280f9a1e62509413729b16ceaac2543d4",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Asian shares surge after oil prices slip and Wall Street resumes its AI rally",
+      "_published_at": "2026-05-21T02:24:59+00:00"
+    },
+    {
+      "article_id": "c03f9b7a7a6f1a394762c835e6ca60896df1ef37957ab4cc3f4097ad04f489d7",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Nvidia posts record quarter as AI demand surges, but muted guidance caps investor excitement",
+      "_published_at": "2026-05-21T04:17:00+00:00"
+    },
+    {
+      "article_id": "e018b6f6c5f3bf72bea2f25f9d44a1994f21ac700c0ab8ba7ddf89f60a8bc233",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Is Nvidia a Buy After Their Latest Earnings Report?",
+      "_published_at": "2026-05-21T04:20:00+00:00"
+    },
+    {
+      "article_id": "7d3573944d31009cce366bdaa900e84996ed045d44e1741231a038feee62e924",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Nvidia bets on new data center chips as sales outlook tops estimates",
+      "_published_at": "2026-05-21T04:44:42+00:00"
+    },
+    {
+      "article_id": "7a71d74111321392c6cc140001b0e0342c3bac0490c560fea3a9ed72db33716b",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "NVIDIA Corp (NVDA) Q1 2027 Earnings Call Highlights: Record Revenue and Strategic Expansion",
+      "_published_at": "2026-05-21T05:00:40+00:00"
+    },
+    {
+      "article_id": "3fff2c2029bd918751f56480ffd528ddbc2798ea38256c9c86d79c0b2175d9fd",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Nvidia beats expectations again as AI boom drives revenue surge, but shares slip",
+      "_published_at": "2026-05-21T06:50:27+00:00"
+    },
+    {
+      "article_id": "c49a7d78af924e8e563af0d3e3079afab4835da6c04641216c530da447c085b4",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "What NVIDIA (NVDA)'s Record Q1 Payouts and US$80 Billion Buyback Mean For Shareholders",
+      "_published_at": "2026-05-21T07:11:43+00:00"
+    },
+    {
+      "article_id": "9cb1ca9308173afb9ae755afeaf18c907fa9d548f83d6baf55731b7f44ac6027",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "NVDA Q1 Earnings Call Flags a Wider AI Infrastructure Push",
+      "_published_at": "2026-05-21T08:15:00+00:00"
+    },
+    {
+      "article_id": "46955909c942efe0432915c6333e070c57e35e7266aa0a8592735f6d0b9d3bef",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Nvidia Lost Half Its China Business — Then Revenue Nearly Doubled",
+      "_published_at": "2026-05-21T08:18:04+00:00"
+    },
+    {
+      "article_id": "74fa81849a1b6d83fc89fb9ec9d343e3cc200d8488a9d9c0b41c6a1695042df9",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "confirmed",
+      "_headline": "Nvidia Q1 Earnings: Growth Slowdown, Massive Agentic AI Positioning",
+      "_published_at": "2026-05-21T08:30:41+00:00"
+    },
+    {
+      "article_id": "9c00a9a62a775458c043c4aa62f74be30aef584213bc13fcf88459f6b59995c6",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Stock Market Today: Dow, S&P 500, Nasdaq Futures Fall After NVDA's Q1 Results— Nebius Group, Intuit In Focus (UPDATED)",
+      "_published_at": "2026-05-21T08:52:55+00:00"
+    },
+    {
+      "article_id": "7f74d0ec2dfcfea9aad1f47984fe99c9de88001c77d2be75dca0502ab7669121",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Nvidia Q1 FY27 net income surges 211% to $58.3bn",
+      "_published_at": "2026-05-21T09:21:34+00:00"
+    },
+    {
+      "article_id": "21ac48e1155f18e1ee521ddda5a3f5efad061ba9159ab73449b387507fcdedb7",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Stock Futures Rise After Nvidia Earnings",
+      "_published_at": "2026-05-21T09:24:20+00:00"
+    },
+    {
+      "article_id": "765692716ac3ec561d0ab95754511d6c7a4a1858dc3341bfcaf1d5d4714195ea",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "no_change",
+      "_headline": "Nvidia CEO says the company has 'largely conceded' China’s AI chip market to Huawei",
+      "_published_at": "2026-05-21T11:26:32+00:00"
+    },
+    {
+      "article_id": "530e5b9f56d69adfefa1e45405b07f112f945f8e9af1701c49b1c48d39b022d0",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "AMD's $10 Billion Taiwan Push Puts AI Chip Race In Focus",
+      "_published_at": "2026-05-21T17:35:40+00:00"
+    },
+    {
+      "article_id": "6a232c60d6b10ca69002da1621c9b4190db876bfefd9a358f8bfc78936e8c83a",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Nvidia Just Raised Its Dividend By 2,400% -- and That Wasn't Even the Biggest News From Its Earnings Report",
+      "_published_at": "2026-05-22T01:31:00+00:00"
+    },
+    {
+      "article_id": "7676e5352f8464acd0ef611932202fd658e4049f9ba0972c4e540ca5894e89a4",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "Nvidia's $82bn quarter masks a company being rebuilt from within",
+      "_published_at": "2026-05-22T06:56:00+00:00"
+    },
+    {
+      "article_id": "15abc7c4acfa6a1bfd4db3e7c3c72025d1e531c12acdce60fdac6a6944093fce",
+      "catalyst_id": "earnings_beat",
+      "relevant": true,
+      "expected_state": "rumored",
+      "_headline": "The Tech Download: What you might have missed in Nvidia’s earnings — a $200 billion opportunity and edge computing",
+      "_published_at": "2026-05-22T07:00:01+00:00"
+    },
+    {
+      "article_id": "594a29ba79cb6e4d464ffca9329014d7a498d886f73f86b49080a9b111b71cfc",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "This Artificial Intelligence (AI) Stock That Has Run Circles Around Nvidia in the Past Year Still Has 39% Upside, Accord",
+      "_published_at": "2026-05-22T08:05:00+00:00"
+    },
+    {
+      "article_id": "1e45c50b82e960ecc4e7ef2fe55f99a9f639cefc0cf35fa00fd1e8c398c77b10",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Lenovo's AI Revenue Surge Exposes Nvidia's China Blind Spot",
+      "_published_at": "2026-05-22T09:05:20+00:00"
+    },
+    {
+      "article_id": "5e54530dda990a6eedc23c24065255f3f73e5a67aaf19afc30c4b2e7c32fe14b",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Nvidia AI Outlook Lifts Asian Chip Suppliers",
+      "_published_at": "2026-05-22T10:30:12+00:00"
+    },
+    {
+      "article_id": "02d570bea743468475f0ccc70fe6c71b134d9738d22e4c69bc97f7137da6f713",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "Congressman Sold Nvidia Stock Before Record Earnings, Missing Out On Gains Again",
+      "_published_at": "2026-05-22T10:33:41+00:00"
+    },
+    {
+      "article_id": "18bb3901e70ac388046a990d036f43f85191a5f8b0a073d339a18dd4a9d1d656",
+      "catalyst_id": "earnings_beat",
+      "relevant": false,
+      "expected_state": "no_change",
+      "_headline": "EXCLUSIVE: SpaceX Frenzy Sends New ETF Past $1 Billion In Just Weeks — TEMA CEO Says Space Economy 'Still In Early Innin",
+      "_published_at": "2026-05-22T15:11:27+00:00"
+    }
+  ],
+  "expected_final": {
+    "earnings_beat": "confirmed"
+  },
+  "expected_confirm_article": {
+    "earnings_beat": "a8980c64d65f07d7b44104524275432ba7daf52d86cc31c5bb3a679c595d562a"
+  },
+  "_curation": "Curated from ~1000 articles (2026-05-18..22, finnhub, day-by-day): all-NVDA-earnings-keyword headlines capped per day + every ~Nth non-matching article. Labels drafted by Claude from article text — REVIEW BEFORE TRUSTING METRICS.",
+  "_label_policy": "confirmed = article states the catalyst as accomplished fact incl. an explicit expectations comparison ('beat forecasts', 'stronger-than-expected'). rumored = predicts the catalyst will occur (analyst previews) OR states facts that imply it without the consensus comparison ('record revenue, up 85%'). no_change = bears on the event without asserting/suggesting the catalyst. irrelevant = daily market recaps & trading-gossip unless their text explicitly speaks to the catalyst. Drafted by Claude 2026-07-05 — Amelia to review."
+}

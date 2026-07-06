@@ -16,7 +16,7 @@ import logging
 import os
 import time
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from typing import Callable, Iterable
 
 import requests
@@ -31,13 +31,13 @@ FINNHUB_BASE = "https://finnhub.io/api/v1"
 # --------------------------------------------------------------------------- #
 @dataclass(frozen=True)
 class Article:
-    id: str                  # sha256(url) — stable dedup key
+    id: str  # sha256(url) — stable dedup key
     ticker: str
     headline: str
-    summary: str | None      # body text / snippet when available; None = headline-only
-    source: str              # which adapter produced it ("finnhub", "yfinance", ...)
+    summary: str | None  # body text / snippet when available; None = headline-only
+    source: str  # which adapter produced it ("finnhub", "yfinance", ...)
     url: str
-    published_at: datetime   # timezone-aware, UTC
+    published_at: datetime  # timezone-aware, UTC
 
     @property
     def has_body(self) -> bool:
@@ -53,10 +53,10 @@ class Article:
 # Public entry point.
 # --------------------------------------------------------------------------- #
 def fetch(
-    ticker: str,
-    since: datetime,
-    sources: Iterable[str] = ("finnhub",),
-    until: datetime | None = None,
+        ticker: str,
+        since: datetime,
+        sources: Iterable[str] = ("finnhub",),
+        until: datetime | None = None,
 ) -> list[Article]:
     """Fetch normalized, deduped articles for `ticker` published on/after `since`.
 
@@ -110,13 +110,13 @@ def fetch(
 # Normalization + dedup helpers (source-agnostic).
 # --------------------------------------------------------------------------- #
 def make_article(
-    *,
-    ticker: str,
-    headline: str,
-    url: str,
-    published_at: datetime,
-    source: str,
-    summary: str | None = None,
+        *,
+        ticker: str,
+        headline: str,
+        url: str,
+        published_at: datetime,
+        source: str,
+        summary: str | None = None,
 ) -> Article:
     """Build an Article, computing the dedup id and cleaning fields.
 
@@ -196,10 +196,11 @@ def _fetch_finnhub(ticker: str, since: datetime, until: datetime | None) -> Iter
     }
     items = _get_json(f"{FINNHUB_BASE}/company-news", params)
 
+    since_ts = int(since.timestamp())
     for item in items:
         url = item.get("url")
         ts = item.get("datetime")  # unix seconds
-        if not url or not ts:
+        if not url or not ts or ts < since_ts:
             continue  # skip malformed rows rather than crash the batch
         yield make_article(
             ticker=ticker,
